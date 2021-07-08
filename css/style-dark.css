@@ -160,6 +160,11 @@ button, input[type=submit], input[type=reset] {
 	color: #0F0; */
 }
 
+.titulo1 {
+	font-size: 24pt;
+	color: #0F0;
+}
+
 .secao {
 	display: inline;
 }
@@ -279,9 +284,4 @@ button, input[type=submit], input[type=reset] {
 
 #audioplayer {
 	text-align: center;
-}
-
-.titulo1 {
-	font-size: 24pt;
-	color: #0F0;
 }
