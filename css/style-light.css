@@ -3,157 +3,133 @@
 	*** Desenvolvido por Fábio de Almeida Martins.
 */
 
-@viewport{
-	width: device-width;
-	zoom: 1;
-	text-orientation: portrait;
-}
+/* Configurações de responsividade do site */
+@viewport 						{width: device-width; zoom: 1; text-orientation: portrait;}
+img, embed, object, video  		{max-width: 100%; height: auto; padding: 2pt; }
 
-body {
-/*	
-	font-size: 62.5%; 
-*/
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	font-weight: normal;
-	background-color: #FFF;
-	color: #000;
-	text-align: center;
-	padding: 5pt;
-	cursor: default;
-}
+/* Configurações de formatação e posicionamento das estruturas do site */
+main 							{text-align: center}
+header 							{}
+footer 							{position: absolute; right: 2%; bottom: 1;}
+aside 							{}
+nav 							{}
+section 						{text-align: center;}
+article 						{}
 
-main {
-	display: block;
-	text-align: center;
-	line-height: 1.5;
-}
+/* Configurações de alinhamento e margens do site */
+body 							{text-align: center; padding: 5pt; display: block;}
 
-section {
-	display: block;
-	text-align: left;
-}
+/* Configurações do ponteiro do cursor */
+body 							{cursor: default;}
+a:link 							{cursor: pointer}
+a:hover							{text-decoration: underline;}
 
-nav {
-/*	position: absolute;
-	left: 45%; */
-	font-family: Arial;
-	font-size: 10pt;
-	text-align: center;
-}
-	
-a {
-	text-decoration: none;
-	cursor: pointer;
-}
+/* Alinhamento horizontal e vertical do texto */
+h1,h2,h3,h4,h5 					{display: block; text-align: center;}
+p 								{}
+figcaption 						{text-align: center;}
+section 						{display: inline;}
+nav 							{text-align: center}
+table 							{text-align: center;}
+.rodape, .imgdescr 				{text-align: center;}
+.corpodetexto 					{text-align: left;}
+.central 						{text-align: center;}
+.esquerda 						{text-align: left;}
+.bloco 							{display: block;}
+.lateral  						{display: block; position: relative; text-align: right;}
+#secaoprincipal 				{text-align: left}
+#audioplayer 					{text-align: center;}
+#logo  							{display: block; text-align: center;}
 
-h1,h2,h3,h4,h5 {
-	display: block;
-    text-align: center;
-}
+/* arrumar as duas linhas abaixo */
+.container 						{display: table; width: 100%; clear: both;}
+.container p 					{display: table-row;}
 
-h1, h2, h3, h6 {
-	font-family: Times New Roman;
-}
+/* Tamanho de texto: */
+body 							{font-size: 10pt;}
+h1 								{font-size: 24pt;}
+h2 								{font-size: 20pt;}
+h3 								{font-size: 18pt;}
+h4 								{font-size: 16pt;}
+h5 								{font-size: 14pt;}
+h6 								{font-size: 12pt;}
+figcaption, nav 				{font-size: 10pt;}
+label 							{font-size: 10pt;}
 
-h1 {
-	font-size: 24pt;
-}
+/* Tipo gráfico, tamanho e formatação do texto */
+body 							{font-family: Arial; font-size: 10pt; font-weight: normal}
+main 							{}
+section							{font-family: Times New Roman;}
+p 								{font-weight: normal}
+a 								{text-decoration: none}
+figcaption 						{font-family: Arial; font-weight: normal;}
+nav 							{font-family: Arial;}
+label 							{font-family: Arial;}
 
-h2 {
-	font-size: 20pt;
-}
+/* Estilos personalizados de texto */
+.corpodetexto 					{font-weight: normal}
+.rodape, .imgdescr 				{font-family: Arial; font-size: 10pt; font-weight: normal}
+.rotulo 						{font-family: Arial; font-size: 10pt; font-weight: bold;}
+.numero 						{font-family: Times New Roman;}
+.arial10 						{font-family: Arial; font-size: 10pt;}
+.tabela	 						{font-family: Arial; font-size: 10pt}
 
-h3 {
-	font-size: 18pt;
-}
+/* Cor da fonte e do fundo de tela do site */
+body 							{color: #000; background-color: #FFF;}
+main 							{}
+section 						{}
+.corpodetexto 					{color: #000}
+.rodape							{color: #000}
+.imgdescr 						{color: #000}
+.numero 						{color: #000}
+.tabela 						{color: #000}
+.titulo 						{color: #000}
+.titulo1 						{color: #F00}
 
-h6 {
-	font-size: 10pt;
-}
+/* Identação de parágrafos */
+body 							{text-indent: 0pt;}
+.corpodetexto 					{text-indent: 1.25cm;}
+ol, li 							{text-indent: 0pt;}
 
-p {
-}
+/* Espaçamento entre linhas do texto */
+main 							{line-height: 1;}
+section							{line-height: 1.5;}
+nav 							{line-height: 1.25;} 
+figcaption 						{line-height: 1;}
+.rodape, .imgdescr 				{line-height: 1;}
+table 							{line-height: 1;}
 
-footer {
-	display: block;
-	position: absolute;
-	right: 2%;
-	bottom: 1;
-}
+/* Configurações de margens e paddings */
+table 							{margin: auto;}
 
-img, embed, object, video {
-/* Adapta imagens e vídeos de acordo com o layout do dispositivo. */
-/*	
-	display: block; 
-*/
-	max-width: 100%;
-	height: auto;
-	padding: 2pt;
-}
+/* Alinhamento de campos de formulários */
+form 							{display: inline;}
+fieldset 						{display: inline; text-align: left}
+legend 							{display: block; text-align: center}
+input, button 					{display: inline;}
+label 							{display: inline; text-align: left}
 
-figcaption {
-	position: relative;
-	text-align: center;
-	font-family: Arial;
-	font-size: 10pt;
-	color: #000;
-	line-height: 1;
-}
+/* Formatação de campo de formulário */
+fieldset 						{margin: 5pt 10pt; padding: 10pt}
+input, button 					{margin: 3pt;	padding: 2pt;}
+label 							{width: auto; padding-right: 10px; padding-bottom: 5px;}
 
-table {
-	margin: auto;
-	border: solid 1px #000;
-}
-	
-form {
-    display: inline;
-}
+/* Bordas e cor de fundo dos elementos */
+table 							{border: solid 1px #000; /* background-color: #FFF; */}
+fieldset 						{border: solid 1px #000; /* background-color: #FFF; */}
+.bordainvisivel 				{border: transparent;}
 
-fieldset {
-    display: inline;
-    margin: 5pt 10pt;
-    padding: 10pt;
-	border: solid 1px #000;
-    text-align:left;
-    background-color: #FFF;
-}
-
-legend {
-    display: block;
-    text-align: center;
-}
-
-input, button {
-    display: inline;
-	margin: 3pt;
-	padding: 2pt;
-}
-
-label {
-    display: inline;
-	width: 35px;
-	padding-right: 20px;
-	padding-bottom: 10px;
-}
-
+/* Formatação das caixas de texto e de seleção */
 input[type=text], input[type=password], input[type=email], input[type=tel], input[type=number], input[type=date], input[type=time], input[type=url]
-{
-    display: inline;
-    padding: 1pt;
-	border-radius: 4px; 
-	border: solid 1px #444; 
-    background-color: #EEE;
-}
+								{padding: 1pt; border-radius: 4px; border: solid 1px #444; background-color: #EEE;}
 
+/* Formatação dos botões */
 button, input[type=submit], input[type=reset] {
-    display: inline;
 	padding:6px 10px;
 	font-weight: bold;
 	border-radius: 4px;
 	cursor:pointer;
-/*
-    border:1px solid #25692A;
+/*  border:1px solid #25692A;
 	font-family:Verdana;
 	font-size:12px;
 	border-color:#46a7f5;
@@ -161,111 +137,10 @@ button, input[type=submit], input[type=reset] {
 	background:linear-gradient(to bottom, #86c6f8 5%, #46a7f5 100%); 
 	box-shadow:inset 0px 1px 0px 0px #d7ecfd;
 	color:#fff; 
-	text-shadow:0px 1px 0px #528009;
-*/
+	text-shadow:0px 1px 0px #528009; */
 }
 
-.titulo {
-/*	font-family: Times New Roman;	
-	font-size: 24pt;
-	font-weight: bold;   */
-	color: #000;
-}
-	
-.secao {
-	display: inline;
-}
-	
-	.corpodetexto {
-	font-weight: normal;
-	text-align: left;
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 12pt;
-	text-indent: 1.25cm;
-}
-
-.links {
-/*	position: absolute;
-	left: 45%; */
-	line-height: 1.25;
-}
-	
-		
-.rodape {
-	font-family: Arial;
-	font-size: 10pt;
-	font-weight: normal;
-	color: #000;
-	line-height: 1;
-	text-align: center;
-}
-
-.lateral {
-/*	display: auto; */
-	display: block;
-	position: relative;
-	text-align: right; 
-}
-
-.tabela {
-	text-align: center;
-    font-family: Times New Roman;   
-    font-size: 12pt;
-}
-
-.rotulo {
-	font-size: 10pt;
-	font-weight: bold;
-}
-
-.imgdescr {
-    position: relative;
-    text-align: center;
-    font-family: Arial;
-    font-size: 10pt;
-    color: #000;
-}
-
-.numero {
-	font-family: Times New Roman;
-}
-
-.arial10 {
-    font-family: Arial;
-	font-size: 10pt;
-}
-
-.times14 {
-    font-family: Times New Roman;
-	font-size: 14pt;
-}
-
-.central {
-	text-align: center;
-}
-
-.esquerda {
-    text-align: left;
-}
-
-.bordainvisivel {
-	border: transparent;
-}
-
-.bloco {
-	display: block;
-}
-
-.container {
-    display: table;
-    width: 100%;
-    clear: both;
-}
-
-.container p {
-    display: table-row;
-}
-
+/* Implementação de fonte gráfica externa */
 @font-face {
     font-family: 'Old English Gothic';
     src: url('./fonts/OldEnglishGothic.eot?#iefix') format('embedded-opentype'),
@@ -275,20 +150,8 @@ button, input[type=submit], input[type=reset] {
     font-weight: 100;
     font-style: normal;
 }
-
 .primletra {
-/*	font-family: Times New Roman; */
-	font-family: 'Old English Gothic'; 
+	font-family: 'Old English Gothic', 'Times New Roman', Times, serif; 
 	font-size: 24pt;
 	color: #F00;
-}
-
-#logo {
-	display: block;
-	margin: 5pt;
-	text-align: center;
-}
-
-#audioplayer {
-	text-align: center;
 }
