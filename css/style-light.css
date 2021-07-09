@@ -8,7 +8,7 @@
 img, embed, object, video  		{max-width: 100%; height: auto; padding: 2pt; }
 
 /* Configurações de formatação e posicionamento das estruturas do site */
-main 							{text-align: center}
+main 							{text-align: center;}
 header 							{}
 footer 							{position: absolute; right: 2%; bottom: 1;}
 aside 							{}
@@ -57,34 +57,36 @@ figcaption, nav 				{font-size: 10pt;}
 label 							{font-size: 10pt;}
 
 /* Tipo gráfico, tamanho e formatação do texto */
-body 							{font-family: Arial; font-size: 10pt; font-weight: normal}
+body 							{font-family: Arial; font-size: 10pt; font-weight: normal;}
 main 							{}
 section							{font-family: Times New Roman;}
-p 								{font-weight: normal}
-a 								{text-decoration: none}
+p 								{font-weight: normal;}
+a 								{text-decoration: none;}
 figcaption 						{font-family: Arial; font-weight: normal;}
 nav 							{font-family: Arial;}
 label 							{font-family: Arial;}
 
 /* Estilos personalizados de texto */
-.corpodetexto 					{font-weight: normal}
-.rodape, .imgdescr 				{font-family: Arial; font-size: 10pt; font-weight: normal}
+.corpodetexto 					{font-weight: normal;}
+.rodape, .imgdescr 				{font-family: Arial; font-size: 10pt; font-weight: normal;}
 .rotulo 						{font-family: Arial; font-size: 10pt; font-weight: bold;}
 .numero 						{font-family: Times New Roman;}
 .arial10 						{font-family: Arial; font-size: 10pt;}
+.times14 						{font-family: Times New Roman; font-size: 14pt}
 .tabela	 						{font-family: Arial; font-size: 10pt}
+.titulo 						{font-family: Times NewRoman}
 
 /* Cor da fonte e do fundo de tela do site */
 body 							{color: #000; background-color: #FFF;}
 main 							{}
 section 						{}
-.corpodetexto 					{color: #000}
-.rodape							{color: #000}
-.imgdescr 						{color: #000}
-.numero 						{color: #000}
-.tabela 						{color: #000}
-.titulo 						{color: #000}
-.titulo1 						{color: #F00}
+.corpodetexto 					{color: #000;}
+.rodape							{color: #000;}
+.imgdescr 						{color: #000;}
+.numero 						{color: #000;}
+.tabela 						{color: #000;}
+.titulo 						{color: #000;}
+.titulo1 						{color: #F00;}
 
 /* Identação de parágrafos */
 body 							{text-indent: 0pt;}
@@ -110,7 +112,7 @@ input, button 					{display: inline;}
 label 							{display: inline; text-align: left}
 
 /* Formatação de campo de formulário */
-fieldset 						{margin: 5pt 10pt; padding: 10pt}
+fieldset 						{margin: 5pt 10pt; padding: 10pt;}
 input, button 					{margin: 3pt;	padding: 2pt;}
 label 							{width: auto; padding-right: 10px; padding-bottom: 5px;}
 
