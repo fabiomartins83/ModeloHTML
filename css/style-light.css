@@ -139,7 +139,7 @@ table 							{margin: auto;}
 .container-fit 					{margin: 1%;}
 .box-fit 						{margin: 1%; padding: 1%}
 .containercolunas 				{margin: 0;}
-.coluna-50 						{margin: 1%; width: 48%; padding-left: 1em; padding-right: 1em;}
+.coluna-50 						{margin: 1%; width: 48%; padding: 1em;}
 .linha-inteira 					{margin: 0 1% 0 1%; width: 100%; padding-left: 1em; padding-right: 1em;}
 
 /* Alinhamento de campos de formulários */
