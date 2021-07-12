@@ -5,79 +5,106 @@
 
 /* Configurações de responsividade do site */
 @viewport 						{width: device-width; zoom: 1; text-orientation: portrait;}
-img, embed, object, video  		{max-width: 100%; height: auto; padding: 2pt; }
-
-/* Configurações de formatação e posicionamento das estruturas do site */
-main 							{text-align: center;}
-header 							{}
-footer 							{position: absolute; right: 2%; bottom: 1;}
-aside 							{}
-nav 							{}
-section 						{text-align: center;}
-article 						{}
+img, embed, object, video  		{max-width: 100%; height: auto; padding: 2px; }
 
 /* Configurações de alinhamento e margens do site */
-body 							{text-align: center; padding: 5pt; display: block;}
+body 							{display: block; width: auto; height: auto; text-align: center}
+
+/* Configurações de formatação e posicionamento das estruturas do site */
+div 							{display: block;}
+main 							{text-align: center;}
+header 							{}
+footer 							{position: relative;}
+aside 							{}
+nav 							{display:inline; width: fit-content;}
+section 						{text-align: center;}
+article 						{}
+.rodape 						{position: relative; bottom: 1; right: 1%; /* background-color: #555; */}
+.container-fit 					{position: relative; display: block; width: 98%; /* background-color: #ff9; */}
+.box-fit 						{display: inline-block;	width: fit-content; /* background-color: #ff0; */}
+.containercolunas 				{display: flex; flex-flow: row wrap; /* background-color: #555; */}
+.divconteudo 					{display: block; height: 100%;}
 
 /* Configurações do ponteiro do cursor */
 body 							{cursor: default;}
-a:link 							{cursor: pointer}
+a:link 							{cursor: pointer;}
 a:hover							{text-decoration: underline;}
 
-/* Alinhamento horizontal e vertical do texto */
-h1,h2,h3,h4,h5 					{display: block; text-align: center;}
+/* Alinhamento horizontal e vertical do texto e dos itens */
+h1,h2,h3,h4,h5 					{text-align: center;}
 p 								{}
 figcaption 						{text-align: center;}
-section 						{display: inline;}
+section 						{}
 nav 							{text-align: center}
 table 							{text-align: center;}
 .rodape, .imgdescr 				{text-align: center;}
-.corpodetexto 					{text-align: left;}
+.rodape 						{float: right}
+.corpodetexto 					{text-align: justify;}
 .central 						{text-align: center;}
 .esquerda 						{text-align: left;}
 .bloco 							{display: block;}
 .lateral  						{display: block; position: relative; text-align: right;}
+.container-fit 					{text-align: center; align-items: center; justify-content: center;}
 #secaoprincipal 				{text-align: left}
 #audioplayer 					{text-align: center;}
 #logo  							{display: block; text-align: center;}
 
-/* arrumar as duas linhas abaixo */
-.container 						{display: table; width: 100%; clear: both;}
-.container p 					{display: table-row;}
+/* Identação de parágrafos */
+body 							{text-indent: 0pt;}
+ol, li 							{text-indent: 0pt;}
+.rodape 						{text-indent: 0pt;}
+.identado 	 					{text-indent: 1.5em;}
 
-/* Tamanho de texto: */
-body 							{font-size: 10pt;}
-h1 								{font-size: 24pt;}
-h2 								{font-size: 20pt;}
-h3 								{font-size: 18pt;}
-h4 								{font-size: 16pt;}
-h5 								{font-size: 14pt;}
-h6 								{font-size: 12pt;}
-figcaption, nav 				{font-size: 10pt;}
-label 							{font-size: 10pt;}
+/* arrumar as duas linhas abaixo - inserir no código do projeto EasyConnect
+.container 						{display: table; width: 100%; clear: both;}     -> mudar nome da classe para container-table
+.container p 					{display: table-row;} 							-> mudar nome da classe para container-table p
+ */
 
-/* Tipo gráfico, tamanho e formatação do texto */
-body 							{font-family: Arial; font-size: 10pt; font-weight: normal;}
+/* Tipo gráfico (fonte) e formatação do texto */
+body 							{font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 14px;}
 main 							{}
-section							{font-family: Times New Roman;}
+section							{}
 p 								{font-weight: normal;}
 a 								{text-decoration: none;}
 figcaption 						{font-family: Arial; font-weight: normal;}
 nav 							{font-family: Arial;}
 label 							{font-family: Arial;}
+.containercolunas 				{}
+.corpodetexto 					{font-family: Arial}
+.rodape, .imgdescr 				{font-family: Arial; font-weight: normal;}
+.rotulo 						{font-family: Arial; font-weight: bold;}
+.numero 						{font-family: 'Times New Roman', Times, serif;}
+.arial10 						{font-family: Arial;}
+.times14 						{font-family: 'Times New Roman', Times, serif;}
+.tabela	 						{font-family: Arial;}
+.titulo 						{font-family: 'Times New Roman', Times, serif}
 
-/* Estilos personalizados de texto */
-.corpodetexto 					{font-weight: normal;}
-.rodape, .imgdescr 				{font-family: Arial; font-size: 10pt; font-weight: normal;}
-.rotulo 						{font-family: Arial; font-size: 10pt; font-weight: bold;}
-.numero 						{font-family: Times New Roman;}
-.arial10 						{font-family: Arial; font-size: 10pt;}
-.times14 						{font-family: Times New Roman; font-size: 14pt}
-.tabela	 						{font-family: Arial; font-size: 10pt}
-.titulo 						{font-family: Times NewRoman}
+/* Tamanho de texto e espaçamento entre parágrafos:  */
+.corpodetexto 					{font-size: 14px;}
+p 								{} /* ATENÇÃO: não adicione tamanho à tag <P>, para conservar a funcionalidade da tag <SMALL> */
+nav 							{font-size: 12px;}
+figcaption		 				{font-size: 12px;}
+label 							{font-size: 12px;}
+.rodape 						{font-size: 12px;}
+.imgdescr 						{font-size: 12px;}
+.rotulo 						{font-size: 12px;}
+/*
+body 							{font-size: 14px;}
+h1 								{font-size: 30px; margin: 9px 0 9px 0;}
+h2 								{font-size: 25px; margin: 6px 0 6px 0;}
+h3 								{font-size: 2px; margin: 6px 0 6px 0;}
+h4 								{font-size: 18px; margin: 6px 0 6px 0;}
+h5 								{font-size: 14px; margin: 3px 0 3px 0;}
+h6 								{font-size: 10px; margin: 0;}
+figcaption, nav 				{font-size: 10px;}
+label 							{font-size: 10px;}
+.arial10 						{font-size: 10px;}
+.times14 						{font-size: 12px}
+.tabela	 						{font-size: 10px} */
 
 /* Cor da fonte e do fundo de tela do site */
-body 							{color: #000; background-color: #FFF;}
+body 							{color: #000; background-color: #F5F5DC}
+#body							{}
 main 							{}
 section 						{}
 .corpodetexto 					{color: #000;}
@@ -89,10 +116,12 @@ section 						{}
 .titulo1 						{color: #F00;}
 .destaque 						{color: #F00;}
 
-/* Identação de parágrafos */
-body 							{text-indent: 0pt;}
-.corpodetexto 					{text-indent: 1.25cm;}
-ol, li 							{text-indent: 0pt;}
+/* Cores de fundo e bordas dos elementos */
+table 							{border: solid 1px #000; background-color: #FFF;}
+fieldset 						{border: solid 1px #000; background-color: #FFF;}
+.bordainvisivel 				{border: transparent;}
+.divconteudo                    {}
+.containercolunas 				{}
 
 /* Espaçamento entre linhas do texto */
 main 							{line-height: 1;}
@@ -101,9 +130,17 @@ nav 							{line-height: 1.25;}
 figcaption 						{line-height: 1;}
 .rodape, .imgdescr 				{line-height: 1;}
 table 							{line-height: 1;}
+.corpodetexto 					{line-height: 1.5;}
 
-/* Configurações de margens e paddings */
+/* Configurações de margens e paddings de tabelas e containers */
+body 							{margin: 0;}
 table 							{margin: auto;}
+.rodape 						{padding: 1%;}
+.container-fit 					{margin: 1%;}
+.box-fit 						{margin: 1%; padding: 1%}
+.containercolunas 				{margin: 0;}
+.coluna-50 						{margin: 1%; width: 48%; padding-left: 1em; padding-right: 1em;}
+.linha-inteira 					{margin: 0 1% 0 1%; width: 100%; padding-left: 1em; padding-right: 1em;}
 
 /* Alinhamento de campos de formulários */
 form 							{display: inline;}
@@ -116,11 +153,6 @@ label 							{display: inline; text-align: left}
 fieldset 						{margin: 5pt 10pt; padding: 10pt;}
 input, button 					{margin: 3pt;	padding: 2pt;}
 label 							{width: auto; padding-right: 10px; padding-bottom: 5px;}
-
-/* Bordas e cor de fundo dos elementos */
-table 							{border: solid 1px #000; /* background-color: #FFF; */}
-fieldset 						{border: solid 1px #000; /* background-color: #FFF; */}
-.bordainvisivel 				{border: transparent;}
 
 /* Formatação das caixas de texto e de seleção */
 input[type=text], input[type=password], input[type=email], input[type=tel], input[type=number], input[type=date], input[type=time], input[type=url]
