@@ -22,6 +22,7 @@
 	<link rel="index" title="Liber Psalmorum - Home" href="./home.html">
 	<title>Título da página na janela</title>
 	<script type="text/javascript" src="./js/JQuery3-min.js"></script>
+	<script type="text/javascript" src="http://www.midijs.net/lib/midi.js"></script>
 	<script type="text/javascript" src="./js/scripts.js"></script>
 	<link type="text/css" rel="stylesheet" href="./css/style-light.css">
 	<link type="text/css" rel="stylesheet" id="css-light" href="" data-href="./css/style-dark.css">
@@ -32,7 +33,7 @@
 				<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 			-->
 </head>
-<body id="body-menusuperior" onload="">
+<body id="body-menusuperior" onload="MIDIjs.play('./audio/Bach-ToccataAndFugue-BWV565.mid');">
 	<div id="div-conteudo">
 		<header id="header" class="cabecalho">
 			<a id="topo"></a>
@@ -114,10 +115,20 @@
 							quem não cumprirá seu dever por fraqueza de vontade. </p>
 					</div>
 				</div>
+<!--
+				<hr>
+				<div id="divaudio" class="central">
+					<audio autoplay="autoplay" loop="loop" preload="auto">
+						<source src=".\audio\Bach-ToccataAndFugue-BWV565.ogg" type="audio/ogg" />
+						<p>Seu navegador não suporta recursos multimídia HTML5.</p>
+					</audio>
+					<br>
+				</div>
+-->
 			</section>
 		</main>
-		<hr>
 		<br>
+		<hr>
 			<section id="menuprincipal" class="container-fit">
 				<div id="divmenuprincipal" class="box-fit" style="background-color: #FF0;">
 					<p><b>Menu inferior </b></p>
@@ -128,7 +139,6 @@
 					</nav>
 				</div>
 			</section>
-			<br>
 			<hr>
 			<footer id="rodape" class="rodape">
 				<div id="divrodape" class="divrodape">
