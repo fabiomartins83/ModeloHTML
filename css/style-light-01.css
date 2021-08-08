@@ -1,0 +1,187 @@
+/* 	
+	*** Modelo de arquivo de formatação web CSS.
+	*** Desenvolvido por Fábio de Almeida Martins.
+*/
+
+/* Configurações de alinhamento e margens do site */
+* 								{text-align: center;}
+body 							{display: block; width: auto; height: auto; overflow-x: hidden; overflow-y: auto; margin: auto 0px; }
+
+/* Configurações de responsividade do site */
+@viewport 						{width: device-width; zoom: 1; text-orientation: portrait;}
+img, embed, object, video  		{max-width: 100%; height: auto; padding: 2px; }
+
+/* Configurações de formatação e posicionamento das estruturas do site */
+div 							{display: block;}
+main 							{text-align: center;}
+header 							{}
+footer 							{position: relative;}
+aside 							{}
+nav 							{display:inline; width: fit-content;}
+section 						{text-align: center;}
+article 						{}
+.rodape 						{position: relative; bottom: 1; right: 1%; /* background-color: #555; */}
+.container-fit 					{position: relative; display: block; width: 98%; /* background-color: #ff9; */}
+.box-fit 						{display: inline-block;	width: fit-content; /* background-color: #ff0; */}
+.containercolunas 				{display: flex; flex-flow: row wrap; /* background-color: #555; */}
+#div-conteudo 					{height: 100%;}
+
+/* Configurações do ponteiro do cursor */
+body 							{cursor: default;}
+a:link 							{cursor: pointer;}
+a:hover							{text-decoration: underline;}
+
+/* Alinhamento horizontal e vertical do texto e dos itens */
+h1,h2,h3,h4,h5,h6				{display: block; text-align: center;}
+p 								{}
+figcaption 						{text-align: center;}
+section 						{}
+nav 							{text-align: center}
+table 							{text-align: center;}
+.rodape, .imgdescr 				{text-align: center;}
+.rodape 						{float: right}
+.corpodetexto 					{text-align: justify;}
+.central 						{text-align: center;}
+.esquerda 						{text-align: left;}
+.bloco 							{display: block;}
+.lateral  						{display: block; position: relative; text-align: right;}
+.container-fit 					{text-align: center; align-items: center; justify-content: center;}
+#secaoprincipal 				{text-align: left}
+#audioplayer 					{text-align: center;}
+#logo  							{display: block; text-align: center;}
+
+/* Identação de parágrafos */
+body 							{text-indent: 0px;}
+ol, li 							{text-indent: 0px;}
+.rodape 						{text-indent: 0px;}
+.identado 	 					{text-indent: 1.5em;}
+
+/* Tipo gráfico (fonte) e formatação do texto */
+body 							{font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 14px;}
+main 							{}
+section							{}
+p 								{font-weight: normal;}
+a 								{text-decoration: none;}
+figcaption 						{font-family: Arial; font-weight: normal;}
+nav 							{font-family: Arial;}
+label 							{font-family: Arial;}
+.containercolunas 				{}
+.corpodetexto 					{font-family: Arial}
+.rodape, .imgdescr 				{font-family: Arial; font-weight: normal;}
+.rotulo 						{font-family: Arial; font-weight: bold;}
+.numero 						{font-family: 'Times New Roman', Times, serif;}
+.arial10 						{font-family: Arial;}
+.times14 						{font-family: 'Times New Roman', Times, serif;}
+.tabela	 						{font-family: Arial;}
+.titulo 						{font-family: 'Times New Roman', Times, serif}
+
+/* Tamanho de texto e espaçamento entre parágrafos:  */
+.corpodetexto 					{font-size: 14px;}
+p 								{} /* ATENÇÃO: não adicione tamanho à tag <P>, para conservar a funcionalidade da tag <SMALL> */
+nav 							{font-size: 12px;}
+figcaption		 				{font-size: 12px;}
+label 							{font-size: 12px;}
+.rodape 						{font-size: 12px;}
+.imgdescr 						{font-size: 12px;}
+.rotulo 						{font-size: 12px;}
+/*
+body 							{font-size: 14px;}
+h1 								{font-size: 30px; margin: 9px 0 9px 0;}
+h2 								{font-size: 25px; margin: 6px 0 6px 0;}
+h3 								{font-size: 2px; margin: 6px 0 6px 0;}
+h4 								{font-size: 18px; margin: 6px 0 6px 0;}
+h5 								{font-size: 14px; margin: 3px 0 3px 0;}
+h6 								{font-size: 10px; margin: 0;}
+figcaption, nav 				{font-size: 10px;}
+label 							{font-size: 10px;}
+.arial10 						{font-size: 10px;}
+.times14 						{font-size: 12px}
+.tabela	 						{font-size: 10px} */
+
+/* Cor da fonte e do fundo de tela do site */
+body 							{color: #000; background-color: #F5F5DC}
+main 							{}
+section 						{}
+.corpodetexto 					{color: #000;}
+.rodape							{color: #000;}
+.imgdescr 						{color: #000;}
+.numero 						{color: #000;}
+.tabela 						{color: #000;}
+.titulo 						{color: #000;}
+.titulo1 						{color: #F00;}
+.destaque 						{color: #F00;}
+
+/* Cores de fundo e bordas dos elementos */
+table 							{border: solid 1px #000; background-color: #FFF;}
+fieldset 						{border: solid 1px #000; background-color: #FFF;}
+.bordainvisivel 				{border: transparent;}
+.containercolunas 				{}
+#div-conteudo 					{}
+
+/* Espaçamento entre linhas do texto */
+main 							{line-height: 1;}
+section							{line-height: 1.5;}
+nav 							{line-height: 1.25;} 
+figcaption 						{line-height: 1;}
+table 							{line-height: 1;}
+.rodape, .imgdescr 				{line-height: 1;}
+.corpodetexto 					{line-height: 1.5;}
+
+/* Configurações de margens e paddings de tabelas e containers */
+body 							{margin: 0;}
+table 							{margin: auto;}
+.rodape 						{padding: 1%;}
+.container-fit 					{margin: 1%;}
+.box-fit 						{margin: 1%; padding: 1%}
+.containercolunas 				{margin: 0;}
+.coluna-50 						{margin: 1%; width: 48%; padding: 1em;}
+.linha-inteira 					{margin: 0 1% 0 1%; width: 100%; padding-left: 1em; padding-right: 1em;}
+
+/* Alinhamento de campos de formulários */
+form 							{display: inline;}
+fieldset 						{display: inline; text-align: left}
+legend 							{display: block; text-align: center}
+input, button 					{display: inline;}
+label 							{display: inline; text-align: left}
+
+/* Formatação de campo de formulário */
+fieldset 						{margin: 5px 10px; padding: 10px;}
+input, button 					{margin: 3px;	padding: 2px;}
+label 							{width: auto; padding-right: 10px; padding-bottom: 5px;}
+
+/* Formatação das caixas de texto e de seleção */
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=number], input[type=date], input[type=time], input[type=url]
+								{padding: 1px; border-radius: 4px; border: solid 1px #444; background-color: #EEE;}
+
+/* Formatação dos botões */
+button, input[type=submit], input[type=reset] {
+	padding:6px 10px;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor:pointer;
+/*  border:1px solid #25692A;
+	font-family:Verdana;
+	font-size:12px;
+	border-color:#46a7f5;
+	text-decoration:none;
+	background:linear-gradient(to bottom, #86c6f8 5%, #46a7f5 100%); 
+	box-shadow:inset 0px 1px 0px 0px #d7ecfd;
+	color:#fff; 
+	text-shadow:0px 1px 0px #528009; */
+}
+
+/* Implementação de fonte gráfica externa */
+@font-face {
+    font-family: 'Old English Gothic';
+    src: url('./fonts/OldEnglishGothic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/OldEnglishGothic.woff2') format('woff2'),
+        url('./fonts/OldEnglishGothic.woff') format('woff'),
+        url('./fonts/OldEnglishGothic.svg#OldEnglishGothic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+.primletra {
+	font-family: 'Old English Gothic', 'Times New Roman', Times, serif; 
+	font-size: 24pt;
+	color: #F00;
+}
