@@ -1,3 +1,26 @@
+* {box-sizing: border-box;}
+
+ body {
+    padding: 0;
+    margin: 0;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+}
+
+aside {
+    float: right;
+    width: 300px;
+    background-color: #080840;
+    height: 100px;
+}
+
 @media (min-width: 991px) {
     .menu-container {
 /*        position: fixed; */
@@ -92,23 +115,39 @@
     text-align: left;
 }
 
---------------------------------------------------
+.barralateral {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 5em;
+    height: auto;
+    width: 20%;
+    overflow-y: auto;
+    text-decoration: none;
+    color:#fff;
+    background-color: #080830;
+}
 
+.div-principal {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: fit-content;
+    right: 0%;
+}
 
+.nav-item {
+    margin-top:40px;
+}
 
+#nav-side {
+    position: fixed;
+    width: 300px;
+    height: 70%;
+    overflow-y: auto;
+    font-weight: bolder;
+}
 
-	<div id="div-conteudo" class="containercolunas">
-		<aside id="aside" class="barralateral">
-			<p><b>Menu da barra lateral </b></p>
-			<div id="divmenulateral" class="container links">
-				<nav id="navmenulateral" class="menu">
-					<ul class="nav flex-column">
-						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 01</a></li>
-						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 02</a></li>
-						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 03</a></li>
-						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 04</a></li>
-						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Sair</a></li>
-					</ul>
-				</nav>
-			</div>
-		</aside>
+/*    
+    background-color: #555; 
+*/
