@@ -3,14 +3,3 @@
 	*** para inclusão no elemento BODY da página HTML.
 	*** Desenvolvido por Fábio de Almeida Martins.
 */
-
-//document.write("Desenvolvido por Fábio de Almeida Martins. <br><br>© 2020  -  Fábio de Almeida Martins");
-
-/*
-var nome = prompt("Digite o seu nome: ");
-console.log("nome = " + nome);
-if (nome != null && nome != "") 
-	alert("Olá, " + nome + "! \nBem vindo à minha página Web!");
-*/
-
-//alert("Desenvolvido por Fábio Martins. \nRedirecionando para www.uol.com.br em 3 segundos...");
