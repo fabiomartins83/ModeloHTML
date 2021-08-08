@@ -16,14 +16,14 @@ div 													{display: block;}
 main 													{text-align: center;}
 header 													{}
 footer 													{position: relative;}
-aside 													{float: right; width: 0px; height: 0px;}
+aside 													{float: right; width: auto; height: auto;}
 nav 													{display:inline; width: fit-content;}
 section 												{text-align: center;}
 article 												{}
 figure 													{position: relative; overflow: hidden;}
 span.seta 												{position: absolute; width: 43px; height: 43px; bottom: 40%; z-index: 5;}
 ul.menu-superior										{list-style: none;}
-#div-conteudo 											{display: block; height: 100%; width: 100%; right: 0%;}
+#div-conteudo 											{height: 100%; width: 100%; right: 0%;}
 .rodape 												{position: relative; bottom: 1; right: 1%; /* background-color: #555; */}
 .container-fit 											{position: relative; display: block; width: 98%; /* background-color: #ff9; */}
 .box-fit 												{display: inline-block;	width: fit-content; /* background-color: #ff0; */}
@@ -56,6 +56,7 @@ table 													{text-align: center;}
 .rodape 												{float: right}
 .corpodetexto 											{text-align: justify;}
 .central 												{text-align: center;}
+.container-fit 											{text-align: center; align-items: center; justify-content: center;}
 .esquerda 												{text-align: left;}
 .bloco 													{display: block;}
 .lateral  												{display: block; position: relative; text-align: right;}

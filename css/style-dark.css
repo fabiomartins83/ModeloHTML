@@ -23,7 +23,7 @@ article 												{}
 figure 													{position: relative; overflow: hidden;}
 span.seta 												{position: absolute; width: 43px; height: 43px; bottom: 40%; z-index: 5;}
 ul.menu-superior										{list-style: none;}
-#div-conteudo 											{display: block; height: 100%; width: 100%; right: 0%;}
+#div-conteudo 											{height: 100%; width: 100%; right: 0%;}
 .rodape 												{position: relative; bottom: 1; right: 1%; /* background-color: #555; */}
 .container-fit 											{position: relative; display: block; width: 98%; /* background-color: #ff9; */}
 .box-fit 												{display: inline-block;	width: fit-content; /* background-color: #ff0; */}
