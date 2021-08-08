@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- 
+	*** Modelo de arquivo HTML para desenvolvimento de página da web
+	*** Desenvolvido por Fábio de Almeida Martins
+	*** adaptado de https://www.devmedia.com.br/menu-em-css-menu-dropdown-horizontal-com-html5-e-css3/37205
+-->
+<html lang="pt-br" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="descricao">
+	<meta name="author" content="Fábio de Almeida Martins">
+	<meta name="copyright" content="© 2021  -  Fábio de Almeida Martins">
+	<meta name="reply-to" content="fabio.martins.01@hotmail.com">
+	<meta name="keywords" content="palavras-chaves, palavra-chave">
+	<meta name="rating" content="general">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="googlebots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="image/x-icon" rel="shortcut icon" href="./img/favicon.ico"> 
+	<link type="application/rss+xml" rel="alternative" title="" href="./feed">
+	<link rel="start" href="./home.html">
+	<link rel="index" title="Liber Psalmorum - Home" href="./home.html">
+	<title>Título da página na janela</title>
+	<script type="text/javascript" src="./js/JQuery3-min.js"></script>
+	<script type="text/javascript" src="./js/scripts.js"></script>
+	<link type="text/css" rel="stylesheet" href="./css/style-light.css">
+	<link type="text/css" rel="stylesheet" id="css-light" href="" data-href="./css/style-dark.css">
+	<link type="text/css" rel="stylesheet" href="./css/menu-superior-responsivo.css" />
+<!--
+	Para habilitar o Bootstrap, insira as duas linhas abaixo:
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+-->
+</head>
+<body id="body" onload="">
+	<script type="text/javascript" src="./js/scripts-body.js"></script>
+	<div id="div-conteudo" class="containercolunas">
+		<a id="topo"></a>
+		<aside id="aside" class="barralateral">
+			<p><b>Menu da barra lateral </b></p>
+			<div id="divmenulateral" class="container links">
+				<nav id="navmenulateral" class="menu">
+					<ul class="nav flex-column">
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 01</a></li>
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 02</a></li>
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 03</a></li>
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 04</a></li>
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Sair</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<div class="div-principal">
+			<header id="header" class="cabecalho">
+				<div id="divlogotipo">
+				</div>
+				<div class="menu-container">
+					<div class="menu-content">
+						<label class="open-menu-all" for="open-menu-all">
+							<input class="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open" />
+							<div class="navegacao-mobile">
+								<span class="linha-menu"></span>
+								<span class="linha-menu"></span>
+								<span class="linha-menu"></span>
+							</div>
+							<ul class="list-menu">
+								<li class="item-menu"><a href="#" target="_blank" class="link-menu">Opção 01</a></li>
+								<li class="item-menu"><a href="#" target="_blank" class="link-menu">Opção 02</a></li>
+								<li class="item-menu"><a href="#" target="_blank" class="link-menu">Opção 03</a></li>
+								<li class="item-menu"><a href="#" target="_blank" class="link-menu">Opção 04</a></li>
+								<li class="item-menu"><a href="#" target="_blank" class="link-menu">Opção 05</a></li>
+							</ul>
+						</label>
+					</div>
+				</div>
+			</header>
+			<main id="principal" class="">
+				<h1 class="titulo" id="tituloprincipal">Página de teste</h1>
+				<div class="containercolunas">
+					<div class="linha-inteira">
+						<h3 class="" id="titulodesecao1">Lorem Ipsum</h3>
+					</div>
+					<div class="coluna-50" style="background-color: #0F0;">
+						<p><b>Original</b></p>
+						<p class="corpodetexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
+							eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+							tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
+							magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
+					</div>
+					<div class="coluna-50" style="background-color: #FF69B4;">
+						<p><b>Tradução</b></p>
+						<p class="corpodetexto">Aquele que ama ou exerce ou deseja a dor, pode ocasionalmente adquirir algum
+							prazer na labuta. Para dar um exemplo trivial, qual de nós se submete a laborioso exercício
+							físico, exceto para obter alguma vantagem com isso? Desmoralizado pelos encantos do prazer,
+							percebe que a dor não resulta em prazer algum. Está tão cego pelo desejo que não pode prever
+							quem não cumprirá seu dever por fraqueza de vontade. </p>
+					</div>
+				</div>
+			</main>
+			<section id="menuprincipal" class="container-fit">
+				<div id="divmenuprincipal" class="box-fit" style="background-color: #FF0;">
+					<p><b>Menu inferior </b></p>
+					<nav id="navmenuprincipal" class="links">
+						<a href="javascript:void(0)" id="mudaEstilo">Alterar estilo</a><br>
+						<a href="#topo">Ir ao topo da página</a><br>
+						<a href="./home.html">Voltar para a Página Inicial</a><br>
+					</nav>
+				</div>
+			</section>
+			<br>
+			<footer id="rodape" class="rodape">
+				<div id="divrodape" class="divrodape">
+					<p><small>Desenvolvido por <b>Fábio de Almeida Martins</b><br>© 2021 - Fábio de Almeida Martins</small>
+					</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

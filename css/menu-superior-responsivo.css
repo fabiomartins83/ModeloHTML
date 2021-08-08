@@ -1,0 +1,114 @@
+@media (min-width: 991px) {
+    .menu-container {
+/*        position: fixed; */
+        top: 0;
+        width: 100%;
+        opacity: 100%;
+        background-color: #444;
+        clear: both;
+    }
+    .menu-content {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        margin: 5px auto;
+        display: block;
+        opacity: 100%;
+    }
+    .list-menu {
+        display: flex!important;
+        justify-content: space-between;
+        width: 100%;
+        background: #fff;
+        box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+    .item-menu {
+        flex: auto;
+    }
+    .item-menu .link-menu {
+        padding: 15px;
+        color: #555;
+        display: block;
+        transition: .4s;
+        cursor: pointer;
+        text-align: center;
+    }
+    .item-menu .link-menu:hover {
+        background: #545bc4;
+        color: #fff;
+    }
+    .navegacao-mobile {
+        display: none!important;
+    }
+}
+  
+.navegacao-mobile {
+    background: #ccc;
+    padding: 10px;
+    display: block;
+    width: 53px;
+    cursor: pointer;
+}
+
+.linha-menu {
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background: #555;
+    margin: 4px;
+    display: block;
+}
+
+.input-menu-all {
+    display: none!important;
+}
+
+.list-menu {
+    display: none;
+     width: 100%;
+     background: #fff;
+     box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+}
+
+.item-menu {
+    flex: auto;
+}
+
+.item-menu .link-menu {
+    padding: 15px;
+    color: #555;
+    display: block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.input-menu-all:checked ~ .list-menu {
+    display: block;      
+}
+.input-menu-all:checked ~ .list-menu .link-menu  {
+    text-align: left;
+}
+
+--------------------------------------------------
+
+
+
+
+	<div id="div-conteudo" class="containercolunas">
+		<aside id="aside" class="barralateral">
+			<p><b>Menu da barra lateral </b></p>
+			<div id="divmenulateral" class="container links">
+				<nav id="navmenulateral" class="menu">
+					<ul class="nav flex-column">
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 01</a></li>
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 02</a></li>
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 03</a></li>
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Opção 04</a></li>
+						<li class="nav-item"><a href="#" target="_blank" class="nav-link">Sair</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
