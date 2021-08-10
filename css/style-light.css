@@ -59,10 +59,9 @@ table 													{text-align: center;}
 .identado 												{text-align: justify;}
 .central 												{text-align: center;}
 .esquerda 												{text-align: left;}
+.direita 												{text-align: right;}
 .bloco 													{display: block;}
 .lateral  												{display: block; position: relative; text-align: right;}
-#secaoprincipal 										{text-align: left}
-#logo  													{display: block; text-align: center;}
 
 /* Configurações do ponteiro do cursor */
 body 													{cursor: default;}
