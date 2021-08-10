@@ -32,22 +32,24 @@ function setaImagem() {
 	var settings = {
 		primeiraImg: function () {
 			elemento = document.querySelector("#slider a:first-child");
-			elemento.classList.add("ativo");
-			this.legenda(elemento);
+			if ((typeof(elemento) != undefined) && (elemento != null)) {
+				elemento.classList.toggle("ativo");
+				this.legenda(elemento);
+			}
 		},
 
 		slide: function () {
 			elemento = document.querySelector(".ativo");
-
-			if (elemento.nextElementSibling) {
-				elemento.nextElementSibling.classList.add("ativo");
-				settings.legenda(elemento.nextElementSibling);
-				elemento.classList.remove("ativo");
-			} else {
-				elemento.classList.remove("ativo");
-				settings.primeiraImg();
+			if ((typeof (elemento) != undefined) && (elemento != null)) {
+				if (elemento.nextElementSibling) {
+					elemento.nextElementSibling.classList.toggle("ativo");
+					settings.legenda(elemento.nextElementSibling);
+					elemento.classList.remove("ativo");
+				} else {
+					elemento.classList.remove("ativo");
+					settings.primeiraImg();
+				}
 			}
-
 		},
 
 		proximo: function () {
@@ -55,7 +57,7 @@ function setaImagem() {
 			elemento = document.querySelector(".ativo");
 
 			if (elemento.nextElementSibling) {
-				elemento.nextElementSibling.classList.add("ativo");
+				elemento.nextElementSibling.classList.toggle("ativo");
 				settings.legenda(elemento.nextElementSibling);
 				elemento.classList.remove("ativo");
 			} else {
@@ -70,21 +72,23 @@ function setaImagem() {
 			elemento = document.querySelector(".ativo");
 
 			if (elemento.previousElementSibling) {
-				elemento.previousElementSibling.classList.add("ativo");
+				elemento.previousElementSibling.classList.toggle("ativo");
 				settings.legenda(elemento.previousElementSibling);
 				elemento.classList.remove("ativo");
 			} else {
 				elemento.classList.remove("ativo");
 				elemento = document.querySelector("a:last-child");
-				elemento.classList.add("ativo");
+				elemento.classList.toggle("ativo");
 				this.legenda(elemento);
 			}
 			intervalo = setInterval(settings.slide, 4000);
 		},
 
 		legenda: function (obj) {
-			var legenda = obj.querySelector("img").getAttribute("alt");
-			document.querySelector("figcaption").innerHTML = legenda;
+			if ((typeof (obj) != undefined) && (obj != null)) {
+				var legenda = obj.querySelector("img").getAttribute("alt");
+				document.querySelector("figcaption").innerHTML = legenda;
+			}
 		}
 
 	}
@@ -96,9 +100,15 @@ function setaImagem() {
 	settings.legenda(elemento);
 
 	//chama o slide à um determinado tempo
-	var intervalo = setInterval(settings.slide, 4000);
-	document.querySelector(".next").addEventListener("click", settings.proximo, false);
-	document.querySelector(".prev").addEventListener("click", settings.anterior, false);
+	var intervalo = setInterval(settings.slide, 3000);
+	var setanext = document.querySelector(".next");
+	var setaprev = document.querySelector(".prev");
+	if ((typeof (setanext) != undefined) && (setanext != null)) {
+		setanext.addEventListener("click", settings.proximo, false);
+	}
+	if ((typeof (setaprev) != undefined) && (setaprev != null)) {
+		setaprev.addEventListener("click", settings.anterior, false);
+	}
 }
 window.addEventListener("load", setaImagem, false);
 // fim do código do slider
@@ -193,6 +203,226 @@ function alteraTexto(idioma) {
 			document.getElementById("linha16").innerHTML = versiculo16la;
 			document.getElementById("linha17").innerHTML = versiculo17la;
 			document.getElementById("linha17").visibility = "hidden";
+	}
+}
+
+function alteraFonteTexto(tipo) {
+	var texto1 = document.querySelector("#texto");
+	var texto2 = document.getElementsByTagName("p");
+	if ((typeof (texto1) == undefined) || (texto1 == null))	alert("Variável texto1 é null ou undefined.");
+	else {
+		for (let listaclasses of texto1.classList) {
+			console.log(listaclasses);
+		}
+		switch(tipo) {
+			case "arial":  
+				texto1.className = "arial";
+				console.log("Arial");
+				break;
+			case "brush":
+				texto1.className = "brush";
+				console.log("Brush");
+				break;
+			case "calibri":
+				texto1.className = "calibri";
+				console.log("Calibri");
+				break;
+			case "century":
+				texto1.className = "century";
+				console.log("Century Gothic");
+				break;
+			case "comic-sans":
+				texto1.className = "comic-sans";
+				console.log("Comic Sans");
+				break;
+			case "copperplate":
+				texto1.className = "copperplate";
+				console.log("Copperplate");
+				break;
+			case "courier-new":
+				texto1.className = "courier-new";
+				console.log("Courier New");
+				break;
+			case "freemono":
+				texto1.className = "freemono";
+				console.log("Freemono");
+				break;
+			case "freestyle":
+				texto1.className = "freestyle";
+				console.log("Freestyle");
+				break;
+			case "futura":
+				texto1.className = "futura";
+				console.log("Century Futura");
+				break;
+			case "garamond":
+				texto1.className = "garamond";
+				console.log("Garamond");
+				break;
+			case "georgia":
+				texto1.className = "georgia";
+				console.log("Georgia");
+				break;
+			case "helvetica":
+				texto1.className = "helvetica";
+				console.log("Helvetica");
+				break;
+			case "impact":
+				texto1.className = "impact";
+				console.log("Impact");
+				break;
+			case "inkfree":
+				texto1.className = "inkfree";
+				console.log("Inkfree");
+				break;
+			case "lucida-cons":
+				texto1.className = "lucida-cons";
+				console.log("Lucida Console");
+				break;
+			case "lucida-hand":
+				texto1.className = "lucida-hand";
+				console.log("Lucida Handwriter");
+				break;
+			case "monotype":
+				texto1.className = "monotype";
+				console.log("Monotype Cursiva");
+				break;
+			case "old-english":
+				texto1.className = "old-english";
+				console.log("Old English Gothic");
+				break;
+			case "optima":
+				texto1.className = "optima";
+				console.log("Optima");
+				break;
+			case "papyrus":
+				texto1.className = "papyrus";
+				console.log("Papyrus");
+				break;
+			case "rockwell":
+				texto1.className = "rockwell";
+				console.log("Rockwell");
+				break;
+			case "snell":
+				texto1.className = "snell";
+				console.log("Snell Roundhand");
+				break;
+			case "tahoma":
+				texto1.className = "tahoma";
+				console.log("Tahoma");
+				break;
+			case "times-new-roman":
+				texto1.className = "times-new-roman";
+				console.log("Times New Roman");
+				break;
+			case "trebuchet":
+				texto1.className = "trebuchet";
+				console.log("Trebuchet");
+				break;
+			case "verdana":
+				texto1.className = "verdana";
+				console.log("Verdana");
+				break;
+		}
+	}
+}
+
+function alteraTamanhoTexto(tamanho) {
+	var texto1 = document.querySelector("#texto");
+	var texto2 = document.getElementsByTagName("p");
+	if ((typeof (texto1) == undefined) || (texto1 == null)) alert("Variável texto1 é null ou undefined.");
+	else {
+		switch (tamanho) {
+			case "normal":
+				texto1.style.fontSize = "1.0em";
+				break;
+			case "tam11":
+				texto1.style.fontSize = "1.1em";
+				break;
+			case "tam12":
+				texto1.style.fontSize = "1.2em";
+				break;
+			case "tam13":
+				texto1.style.fontSize = "1.3em";
+				break;
+			case "tam14":
+				texto1.style.fontSize = "1.4em";
+				break;
+			case "tam15":
+				texto1.style.fontSize = "1.5em";
+				break;
+			case "tam16":
+				texto1.style.fontSize = "1.6em";
+				break;
+			case "tam17":
+				texto1.style.fontSize = "1.7em";
+				break;
+			case "tam18":
+				texto1.style.fontSize = "1.8em";
+				break;
+			case "tam19":
+				texto1.style.fontSize = "1.9em";
+				break;
+			case "tam20":
+				texto1.style.fontSize = "2.0em";
+				break;
+			case "tam21":
+				texto1.style.fontSize = "2.1em";
+				break;
+			case "tam22":
+				texto1.style.fontSize = "2.2em";
+				break;
+			case "tam23":
+				texto1.style.fontSize = "2.3em";
+				break;
+			case "tam24":
+				texto1.style.fontSize = "2.4em";
+				break;
+			case "tam25":
+				texto1.style.fontSize = "2.5em";
+				break;
+			case "tam26":
+				texto1.style.fontSize = "2.6em";
+				break;
+			case "tam27":
+				texto1.style.fontSize = "2.7em";
+				break;
+			case "tam28":
+				texto1.style.fontSize = "2.8em";
+				break;
+			case "tam29":
+				texto1.style.fontSize = "2.9em";
+				break;
+			case "tam30":
+				texto1.style.fontSize = "3.0em";
+				break;
+			case "tam31":
+				texto1.style.fontSize = "3.1em";
+				break;
+			case "tam32":
+				texto1.style.fontSize = "3.2em";
+				break;
+		}
+	}
+}
+
+function alteraCorTexto(cor) {
+	var texto1 = document.getElementById("texto");
+	var texto2 = document.querySelector("#texto");
+	var texto2 = document.getElementsByTagName("p");
+	if ((typeof (texto1) == undefined) || (texto1 == null)) alert("Variável texto1 é null ou undefined.");
+	else {
+		texto1.style.color = cor;
+	}
+}
+
+function alteraCorFundo(cor) {
+	var texto1 = document.getElementById("texto");
+	var texto2 = document.querySelector("#texto");
+	var texto2 = document.getElementsByTagName("p");
+	if ((typeof (texto1) == undefined) || (texto1 == null)) alert("Variável texto1 é null ou undefined.");
+	else {
+		texto1.style.background = cor;
 	}
 }
 

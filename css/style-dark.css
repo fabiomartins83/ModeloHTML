@@ -4,19 +4,19 @@
 */
 
 /* Configurações de alinhamento e margens do site */
-* 														{text-align: center; box-sizing: border-box;}
+* 														{box-sizing: border-box;}
 body 													{display: block; width: 100%; height: auto; overflow-x: hidden; overflow-y: auto; margin: auto 0px; z-index:0;}
 
 /* Configurações de responsividade do site */
 @viewport 												{width: device-width; zoom: 1; text-orientation: portrait;}
 img, embed, object, video  								{max-width: 100%; height: auto; padding: 2px; border: none}
 
-/* Configurações de formatação e posicionamento das estruturas do site */
+/* Configurações de tamanho e posicionamento das estruturas do site */
 div 													{display: block;}
 main 													{text-align: center;}
 header 													{}
 footer 													{position: relative;}
-aside 													{float: right; width: 0px; height: 0px;}
+aside 													{float: right; width: auto; height: auto;}
 nav 													{display:inline; width: fit-content;}
 section 												{text-align: center;}
 article 												{}
@@ -44,17 +44,19 @@ ul.menu-superior										{list-style: none;}
 .slider ul 												{position: absolute;}
 .next:before,.next:after,.prev:before,.prev:after 		{position: absolute;} 
 
-/* Alinhamento horizontal e vertical do texto */
+/* Alinhamento horizontal e vertical do texto e dos itens */
 h1,h2,h3,h4,h5,h6										{display: block; text-align: center;}
 p 														{}
 figcaption 												{position: absolute; text-align: center; align-items: center; z-index: 5;}
-figcaption.legenda-slider								{position: absolute; width: 100%; height: 55px; line-height: 55px; bottom: 0; }
+figcaption.legenda-slider								{position: absolute; width: 100%; height: 55px; bottom: 0; }
 section 												{display: inline;}
 nav 													{text-align: center}
 table 													{text-align: center;}
 .rodape, .imgdescr 										{text-align: center;}
 .rodape 												{float: right}
+.container-fit 											{text-align: center; align-items: center; justify-content: center;}
 .corpodetexto 											{text-align: justify;}
+.identado 												{text-align: justify;}
 .central 												{text-align: center;}
 .esquerda 												{text-align: left;}
 .bloco 													{display: block;}
@@ -73,8 +75,8 @@ ol, li 													{text-indent: 0px;}
 .rodape 												{text-indent: 0px;}
 .identado 	 											{text-indent: 1.5em;}
 
-/* Tipo grÃ¡fico (fonte) e formataÃ§Ã£o do texto */
-body 													{font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 14px;}
+/* Tipo gráfico (fonte) e formatação do texto */
+body 													{font-family: Arial, Helvetica, sans-serif; font-weight: normal;}
 main 													{}
 section													{}
 p 														{font-weight: normal;}
@@ -83,43 +85,91 @@ figcaption 												{font-family: Arial; font-weight: normal;}
 nav 													{font-family: Arial;}
 label 													{font-family: Arial;}
 .colunas-container 										{}
-.corpodetexto 											{font-family: Arial}
+.corpodetexto 											{}
 .rodape, .imgdescr 										{font-family: Arial; font-weight: normal;}
 .rotulo 												{font-family: Arial; font-weight: bold;}
+.legenda 												{font-family: Arial; font-weight: normal;}
 .numero 												{font-family: 'Times New Roman', Times, serif;}
-.fonte-arial											{font-family: Arial;}
-.fonte-times											{font-family: 'Times New Roman', Times, serif;}
 .tabela	 												{font-family: Arial;}
-.titulo 												{font-family: 'Times New Roman', Times, serif;}
+.titulo 												{}
 .maiuscula 												{text-transform: uppercase;}
 .menu-superior 											{font-weight: bold;}
+.arial {font-family: "Arial", sans-serif; }
+.blippo {font-family: "Blippo", fantasy; }
+.brush {font-family: "Brush Script MT", cursive; }
+.calibri {font-family: "Calibri", sans-serif; }
+.century {font-family: "Century Gothic", sans-serif; }
+.comic-sans {font-family: "Comic Sans MS", cursive; }
+.copperplate {font-family: "Copperplate Gothic Light", fantasy; }
+.courier {font-family: "Courier", monospace; }
+.courier-new {font-family: "Courier New", monospace; }
+.dejavu {font-family: "DejaVu Sans", monospace; }
+.didot {font-family: "Didot", serif; }
+.freemono {font-family: "FreeMono", monospace; }
+.freestyle {font-family: "Freestyle Script", cursive; }
+.futura {font-family: "Futura", sans-serif; }
+.garamond {font-family: "Garamond", serif; }
+.georgia {font-family: "Georgia", serif; }
+.helvetica {font-family: "Helvetica", sans-serif; }
+.impact {font-family: "Impact", fantasy; }
+.inkfree {font-family: "Ink Free", cursive; }
+.jazz {font-family: "Jazz LET", fantasy; }
+.lucida-cons {font-family: "Lucida Console", monospace; }
+.lucida-hand {font-family: "Lucida Handwriting", cursive; }
+.luminari {font-family: "Luminari", fantasy; }
+.monaco {font-family: "Monaco", monospace; }
+.monotype {font-family: "Monotype Cursiva", cursive; }
+.old-english {font-family: "Old English Gothic", fantasy; }
+.optima {font-family: "Optima", sans-serif; }
+.papyrus {font-family: "Papyrus", fantasy; }
+.rockwell {font-family: "Rockwell", serif; }
+.snell {font-family: "Snell Roundhand", cursive; }
+.stencil {font-family: "Stencil Std", fantasy; }
+.tahoma {font-family: "Tahoma", sans-serif; }
+.times {font-family: "Times", serif; }
+.times-new-roman {font-family: "Times New Roman", serif; }
+.trattatello {font-family: "Trattatello", fantasy; }
+.trebuchet {font-family: "Trebuchet MS", sans-serif; }
+.verdana {font-family: "Verdana", sans-serif; }
 
-/* Tamanho de texto e espaÃ§amento entre parÃ¡grafos:  */
-.corpodetexto 											{font-size: 14px;}
+/* Tamanho de texto e espaçamento entre parágrafos:  */
+body 													{font-size: 0.9em;}
+.corpodetexto 											{font-size: 1.0em;}
 p 														{} /* ATENÃ‡ÃƒO: nÃ£o adicione tamanho Ã  tag <P>, para conservar a funcionalidade da tag <SMALL> */
-nav 													{font-size: 12px;}
-figcaption		 										{font-size: 12px;}
-label 													{font-size: 12px;}
-.rodape 												{font-size: 12px;}
-.imgdescr 												{font-size: 12px;}
-.rotulo 												{font-size: 12px;}
-.tam10px 												{font-size: 10px;}
-.tam12px 												{font-size: 12px;}
-.tam14px 												{font-size: 14px;}
-/*
-body 													{font-size: 14px;}
-h1 														{font-size: 30px; margin: 9px 0 9px 0;}
-h2 														{font-size: 25px; margin: 6px 0 6px 0;}
-h3 														{font-size: 2px; margin: 6px 0 6px 0;}
-h4 														{font-size: 18px; margin: 6px 0 6px 0;}
-h5 														{font-size: 14px; margin: 3px 0 3px 0;}
-h6 														{font-size: 10px; margin: 0;}
-figcaption, nav 										{font-size: 10px;}
-label 													{font-size: 10px;}
-.tabela	 												{font-size: 10px} */
+figcaption 										{font-size: 0.9em;}
+nav 													{font-size: 0.8em;}
+label 													{font-size: 0.9em;}
+.rodape 												{font-size: 0.9em;}
+.imgdescr 												{font-size: 1.0em;}
+.rotulo 												{font-size: 1.0em;}
+.menu-links 											{font-size: 1.0em;}
+.tam-normal,h6												{font-size: 1.0em;}
+.tam11													{font-size: 1.1em;}
+.tam12	 												{font-size: 1.2em;}
+.tam13,h5 													{font-size: 1.3em;}
+.tam14 													{font-size: 1.4em;}
+.tam15 													{font-size: 1.5em;}
+.tam16,h4												{font-size: 1.6em;}
+.tam17												{font-size: 1.7em;}
+.tam18 													{font-size: 1.8em;}
+.tam19,h3													{font-size: 1.9em;}
+.tam20 													{font-size: 2.0em;}
+.tam21												{font-size: 2.1em;}
+.tam22													{font-size: 2.2em;}
+.tam23,h2													{font-size: 2.3em;}
+.tam24 												{font-size: 2.4em;}
+.tam25													{font-size: 2.5em;}
+.tam26													{font-size: 2.6em;}
+.tam27													{font-size: 2.7em;}
+.tam28													{font-size: 2.8em;}
+.tam29													{font-size: 2.9em;}
+.tam30													{font-size: 3.0em;}
+.tam31													{font-size: 3.1em;}
+.tam32,h1													{font-size: 3.2em;}
+.tabela	 												{font-size: 1.0em} 
 
-/* Cor da fonte e do fundo de tela do site */
-body 													{color: #FFF; background-color: #101010;}
+/* Cor da fonte, de fundo e opacidade dos elementos */
+body 													{color: #FFF; background-color: #000 /*  #101010 */;}
 main 													{}
 section 												{}
 aside 													{background-color: #080840}
@@ -132,6 +182,7 @@ aside 													{background-color: #080840}
 .titulo1 												{color: #0F0;}
 .destaque 												{color: #0F0;}
 .barra-superior 										{background-color: #6060ff; opacity: 1 /* 75% */;}
+.barra-lateral 											{background-color: #080830}
 
 /* Imagem de fundo de tela */
 body 													{background-attachment: fixed; background-size: cover; background-repeat: no-repeat;}
@@ -146,25 +197,38 @@ fieldset 												{border: solid 1px #000; background-color: #FFF;}
 #div-conteudo 											{}
 
 /* Espaçamento entre linhas do texto */
-main 													{line-height: 1;}
-section													{line-height: 1.5;}
+main 													{line-height: 1.25;}
+section													{line-height: 1.25;}
 nav 													{line-height: 1.25;} 
+a 														{line-height: 1.25;}
+label 													{line-height: 1;}
 figcaption 												{line-height: 1;}
 table 													{line-height: 1;}
 .rodape, .imgdescr 										{line-height: 1;}
 .corpodetexto 											{line-height: 1.5;}
 
-/* Configurações de margens e paddings */
+/* Configurações de margens e paddings dos elementos */
 body 													{margin: 0;}
 table 													{margin: auto;}
 figcaption 												{padding: 5px;}
+p,h1,h2,h3,h4,h5,h6										{margin: 10px auto; }
+h1 														{margin-bottom: 20px;}
+h2 														{margin-bottom: 18px;}
+h3 														{margin-bottom: 16px;}
+h4 														{margin-bottom: 14px;}
+h5 														{margin-bottom: 12px;}
+h6 														{margin-bottom: 10px;}
 #body-menusuperior 										{padding-top: 60px;}
 #div-conteudo 											{margin: 0; padding: 0; }
+.corpodetexto 											{}
+.margem-interna											{padding: 10px;}
+.margem-externa											{margin: 1%;}
 .rodape 												{padding: 1%;}
+.links 													{margin: 10px auto;}
 .container-fit 											{margin: 1%;}
 .box-fit 												{margin: 1%; padding: 1%}
 .colunas-container 										{margin: 0;}
-.coluna-50 												{margin: 1%; width: 48%; padding: 1px;}
+.coluna-50 												{margin: 1%; width: 48%;}
 .linha-inteira 											{margin: 0 1% 0 1%; width: 100%; padding-left: 1px; padding-right: 1px;}
 .barra-superior											{margin: 0;}
 .menu-superior ul 										{padding: 0 20px;}
@@ -175,7 +239,7 @@ figcaption 												{padding: 5px;}
 .menu-superior ul ul li a  								{padding: 10px 20px;}
 .slider 												{margin: auto; margin-top: 20px; }
 
-/* FormataÃ§Ã£o do menu superior */
+/* Formatação do menu superior */
 .menu-superior ul 										{list-style: none;}
 .menu-superior ul:after 								{content:""}
 .menu-superior ul li 									{background-color: #EFEFEF; background: linear-gradient(top, #efefef 0%, #bbbbbb 100%); background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); box-shadow: 0px 0px 10px rgba(0,0,0,0.15); border-radius: 10px;}
@@ -185,9 +249,9 @@ figcaption 												{padding: 5px;}
 .menu-superior ul ul li 								{border-top: 1px solid #6B727C; border-bottom: 1px solid #575F6A;}
 .menu-superior ul ul li a:hover 						{background: #101080; border-radius: 10px;}
 
-/* FormataÃ§Ã£o do slider de imagem */
+/* Formatação do slider de imagem */
 figure:hover span.seta 									{opacity: 0.75; filter: alpha(opacity=75);} 
-figcaption 												{color: #FFF; background: rgba(64,64,64,0.75); /* font-size: 18px; font-family: "Kaushan Script","Lato","Arial"; */}
+figcaption 												{color: #FFF; background: rgba(64,64,64,0.75); /* font-family: "Kaushan Script","Lato","Arial"; */}
 span.seta 												{background: #404040; cursor: pointer; opacity: 0; filter:alpha(opacity=0); }
 .slider ul 												{list-style: none;}
 #slider 												{position: relative; z-index: 1;}
@@ -215,11 +279,11 @@ fieldset 												{margin: 5px 10px; padding: 10px;}
 input, button 											{margin: 3px;	padding: 2px;}
 label 													{width: auto; padding-right: 10px; padding-bottom: 5px;}
 
-/* FormataÃ§Ã£o das caixas de texto e de seleÃ§Ã£o */
+/* Formatação das caixas de texto e de seleção */
 input[type=text], input[type=password], input[type=email], input[type=tel], input[type=number], input[type=date], input[type=time], input[type=url]
 								{padding: 1px; border-radius: 4px; border: solid 1px #444; background-color: #EEE;}
 
-/* FormataÃ§Ã£o dos botÃµes */
+/* Formatação dos botões */
 button, input[type=submit], input[type=reset] {
 	padding:6px 10px;
 	font-weight: bold;
@@ -236,7 +300,7 @@ button, input[type=submit], input[type=reset] {
 	text-shadow:0px 1px 0px #528009; */
 }
 
-/* ImplementaÃ§Ã£o de fonte grÃ¡fica externa */
+/* Implementação de fonte gráfica externa */
 @font-face {
     font-family: 'Old English Gothic';
     src: url('./fonts/OldEnglishGothic.eot?#iefix') format('embedded-opentype'),
@@ -248,6 +312,6 @@ button, input[type=submit], input[type=reset] {
 }
 .primletra {
 	font-family: 'Old English Gothic', 'Times New Roman', Times, serif; 
-	font-size: 24pt;
+	font-size: 2.0em;
 	color: #F00;
 }
