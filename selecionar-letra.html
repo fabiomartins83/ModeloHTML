@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- 
+	*** Modelo de arquivo HTML para desenvolvimento de página da web
+	*** Desenvolvido por Fábio de Almeida Martins
+-->
+<html lang="pt-br" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="descricao">
+	<meta name="author" content="Fábio de Almeida Martins">
+	<meta name="copyright" content="© 2020  -  Fábio de Almeida Martins">
+	<meta name="reply-to" content="fabio.martins.01@hotmail.com">
+	<meta name="keywords" content="palavras-chaves, palavra-chave">
+	<meta name="rating" content="general">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="googlebots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"> 
+	<link rel="alternative" type="application/rss+xml" title="Liber Psalmorum - RSS Feed" href="./feed">
+	<link rel="start" href="./home.html">
+	<link rel="index" title="Liber Psalmorum - Home" href="./home.html">
+	<title>Título da página na janela</title>
+	<script type="text/javascript" src="./js/JQuery3-min.js"></script>
+	<script type="text/javascript" src="./js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/style-light.css">
+	<link rel="stylesheet" type="text/css" id="css-light" href="" data-href="./css/style-dark.css">
+<!--
+	Para habilitar o Bootstrap, insira as duas linhas abaixo:
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+-->
+</head>
+<body id="body" onload="">
+	<script type="text/javascript" src="./js/scripts-body.js"></script>
+	<header id="header" class="cabecalho">
+		<div id="divlogotipo">
+			<a id="topo">
+			</a>
+			<h1 class="titulo" id="tituloprincipal">Página de teste</h1>
+		</div>
+	</header>
+    <main id="principal">
+        <section id="secaoprincipal">
+            <h2 class="titulo">Testando CSS e Javascript... </h5>
+			<div id="colunas-container-01" class="colunas-container" style="">
+<!--
+				<div class="linha-inteira">
+					<h3 class="" id="titulodesecao2">Texto dividido em duas colunas</h3>
+				</div>
+-->
+				<div id="bloco01" class="coluna-50 corpodetexto">
+					<div id="texto" class="">
+						<h6>Lorem Ipsum</h6>
+						<p id="bloco02-paragrafo01" class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
+							eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+							tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
+							magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
+					</div>
+				</div>
+				<div id="bloco02" class="coluna-50">
+					<form id="form-fonte" method="" action="">
+						<input type="color" id="input-cor-texto" value="#000" onchange="alteraCorTexto(this.value)">
+						<input type="color" id="input-cor-fundo" value="#FFF" onchange="alteraCorFundo(this.value)">
+						<select id="select-fonte" name="select-fonte" onchange="alteraFonteTexto(this.value);">
+							<option value="arial" selected>Arial</option>
+							<option value="brush">Brush Script MT</option>
+							<option value="calibri">Calibri</option>
+							<option value="century">Century Gothic</option>
+							<option value="comic-sans">Comic Sans MS</option>
+							<option value="copperplate">Copperplate Gothic Light</option>
+							<option value="courier-new">Courier New</option>
+							<option value="freemono">FreeMono</option>
+							<option value="freestyle">Freestyle Script</option>
+							<option value="futura">Futura</option>
+							<option value="garamond">Garamond</option>
+							<option value="georgia">Georgia</option>
+							<option value="helvetica">Helvetica</option>
+							<option value="impact">Impact</option>
+							<option value="inkfree">Ink Free</option>
+							<option value="lucida-cons">Lucida Console</option>
+							<option value="lucida-hand">Lucida Handwriting</option>
+							<option value="monotype">Monotype Cursiva</option>
+							<option value="old-english">Old English Gothic</option>
+							<option value="optima">Optima</option>
+							<option value="papyrus">Papyrus</option>
+							<option value="rockwell">Rockwell</option>
+							<option value="snell">Snell Roundhand</option>
+							<option value="tahoma">Tahoma</option>
+							<option value="times-new-roman">Times New Roman</option>
+							<option value="trebuchet">Trebuchet MS</option>
+							<option value="verdana">Verdana</option>
+						</select>
+						<select id="select-tamanho" name="select-tamanho" onchange="alteraTamanhoTexto(this.value);">
+							<option value="normal" selected>1.0 em</option>
+							<option value="tam11">1.1 em</option>
+							<option value="tam12">1.2 em</option>
+							<option value="tam13">1.3 em</option>
+							<option value="tam14">1.4 em</option>
+							<option value="tam15">1.5 em</option>
+							<option value="tam16">1.6 em</option>
+							<option value="tam17">1.7 em</option>
+							<option value="tam18">1.8 em</option>
+							<option value="tam19">1.9 em</option>
+							<option value="tam20">2.0 em</option>
+							<option value="tam21">2.1 em</option>
+							<option value="tam22">2.2 em</option>
+							<option value="tam23">2.3 em</option>
+							<option value="tam24">2.4 em</option>
+							<option value="tam25">2.5 em</option>
+							<option value="tam26">2.6 em</option>
+							<option value="tam27">2.7 em</option>
+							<option value="tam28">2.8 em</option>
+							<option value="tam29">2.9 em</option>
+							<option value="tam30">3.0 em</option>
+							<option value="tam31">3.1 em</option>
+							<option value="tam32">3.2 em</option>
+						</select>
+						<!--
+						<input type="checkbox">
+						<textarea></textarea>
+					-->
+					</form>
+				</div>
+			</div>
+        </section>
+    </main>
+	<br><br><br>
+	<section id="menuinferior-container" class="container-fit">
+		<div id="menuinferior-box" class="box-fit menu-links" style="">
+			<h6>Menu principal</h6>
+			<nav id="navmenuprincipal links">
+				<a href="javascript:void(0)" id="mudaEstilo">Alterar estilo</a><br>
+				<a href="#topo">Ir ao topo da página</a><br>
+				<a href="./home.html">Voltar para a Página Inicial</a><br>
+			</nav>
+		</div>
+	</section>
+	<footer id="rodape" class="rodape">
+		<div id="divrodape" class="divrodape">
+			<p><small>Desenvolvido por <b>Fábio de Almeida Martins</b><br>© 2021 - Fábio de Almeida Martins</small>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
