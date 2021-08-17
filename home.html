@@ -2,162 +2,163 @@
 <!-- 
 	*** Modelo de arquivo HTML para desenvolvimento de página da web
 	*** Desenvolvido por Fábio de Almeida Martins
-	*** adaptado de https://www.devmedia.com.br/menu-em-css-menu-dropdown-horizontal-com-html5-e-css3/37205
 -->
 <html lang="pt-br" dir="ltr">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="descricao">
-	<meta name="author" content="Fabio de Almeida Martins">
-	<meta name="copyright" content="Direitos Reservados - Fabio de Almeida Martins - © 2021 ">
-	<meta name="reply-to" content="fabio.martins.01@hotmail.com">
-	<meta name="keywords" content="palavras-chaves, palavra-chave">
-	<meta name="rating" content="general">
-	<meta name="robots" content="noindex,nofollow">
-	<meta name="googlebots" content="noindex,nofollow">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link type="image/x-icon" rel="shortcut icon" href="./img/favicon.ico">
-	<link type="application/rss+xml" rel="alternative" title="" href="./feed">
-	<link rel="start" href="./home.html">
-	<link rel="index" title="Liber Psalmorum - Home" href="./home.html">
-	<title>Título da página na janela</title>
-	<script type="text/javascript" src="./js/JQuery3-min.js"></script>
-	<script type="text/javascript" src="http://www.midijs.net/lib/midi.js"></script>
-	<script type="text/javascript" src="./js/scripts.js"></script>
-	<link type="text/css" rel="stylesheet" href="./css/style-light.css">
-	<link type="text/css" rel="stylesheet" id="css-light" href="" data-href="./css/style-dark.css">
-	<link type="text/css" rel="stylesheet" href="./css/menu-superior.css">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="descricao">
+		<meta name="author" content="Fabio de Almeida Martins">
+		<meta name="copyright" content="Direitos Reservados - Fabio de Almeida Martins - © 2021 ">
+		<meta name="reply-to" content="fabio.martins.01@hotmail.com">
+		<meta name="keywords" content="palavras-chaves, palavra-chave">
+		<meta name="rating" content="general">
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="googlebots" content="noindex,nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="image/x-icon" rel="shortcut icon" href="./img/favicon.ico">
+		<link type="application/rss+xml" rel="alternative" title="" href="./feed.rss">
 <!--
+		<link rel="start" href="./home.html">
+		<link rel="index" title="Liber Psalmorum - Home" href="./home.html">
 		Para habilitar o Bootstrap, insira as duas linhas abaixo:
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 -->
-</head>
-<body id="body">
-<!-- <body id="body" onload="MIDIjs.play('./audio/Bach-PreludeInCMajor-BWV846.mid');" -->
-	<script type="text/javascript" src="./js/scripts-body.js"></script>
-	<div id="div-conteudo">
-		<header id="header" class="cabecalho">
-			<a id="topo"></a>
-			<div id="barra-superior" class="barra-superior">
-				<div id="menu-superior" class="menu-superior">
-					<ul>
-						<li><a href="home.html">Home</a></li>
-						<li>
-							<a href="#">História</a>
-							<ul>
-								<li><a href="#">Origem</a></li>
-								<li><a href="#">Expansão</a></li>
-								<li><a href="#">Reconhecimento</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Produtos</a>
-							<ul>
-								<li><a href="#">Para a casa</a></li>
-								<li><a href="#">Para o escritório</a></li>
-								<li><a href="#">Para indústrias</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Quem somos</a>
-							<ul>
-								<li><a href="#">Fundadores</a></li>
-								<li><a href="#">Nossa equipe</a></li>
-							</ul>
-						</li>
-						<li><a href="contato.html">Contato </a></li>
-					</ul>
+		<title>Título da página na janela</title>
+		<script type="text/javascript" src="./js/JQuery3-min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="http://www.midijs.net/lib/midi.js"></script>
+		<script type="text/javascript" src="./js/scripts.js"></script>
+		<link type="text/css" rel="stylesheet" href="./css/style-light.css">
+		<link type="text/css" rel="stylesheet" id="css-light" href="" data-href="./css/style-dark.css">
+		<link type="text/css" rel="stylesheet" href="./css/menu-superior.css">
+	</head>
+	
+	<body id="body-menusuperior">
+<!-- 
+	<body id="body" onload="MIDIjs.play('./audio/Bach-PreludeInCMajor-BWV846.mid');">
+-->
+		<script type="text/javascript" src="./js/scripts-body.js"></script>
+		<div id="div-conteudo">
+			<header id="header" class="cabecalho">
+				<div id="barra-superior" class="barra-superior">
+					<div id="menu-superior" class="menu-superior">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li>
+								<a href="#">História</a>
+								<ul>
+									<li><a href="#">Origem</a></li>
+									<li><a href="#">Expansão</a></li>
+									<li><a href="#">Reconhecimento</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Produtos</a>
+								<ul>
+									<li><a href="#">Para a casa</a></li>
+									<li><a href="#">Para o escritório</a></li>
+									<li><a href="#">Para indústrias</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Quem somos</a>
+								<ul>
+									<li><a href="#">Fundadores</a></li>
+									<li><a href="#">Nossa equipe</a></li>
+								</ul>
+							</li>
+							<li><a href="contato.html">Contato </a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</header>
-		<main id="main">
-			<h1 class="titulo" id="tituloprincipal">Página de teste</h1>
-			<h2 class="titulo" id="titulosecundario">Fábio de Almeida Martins</h2>
+			</header>
+			<main id="main">
+				<a id="topo"></a>
+				<h1 class="titulo" id="tituloprincipal">Página de teste</h1>
+				<h2 class="titulo" id="titulosecundario">Fábio de Almeida Martins</h2>
+				<hr>
+				<section id="secaoprincipal">
+					<div class="div-galeria">
+						<div class="">
+							<h3 class="" id="titulodesecao1">Galeria de imagens com rolagem lateral</h3>
+						</div>
+						<div class="div-figura">
+							<h5>Vale do Anhangabaú</h5>
+							<figure id="figure-01" class="figure">
+								<span class="seta trs next"></span>
+								<span class="seta trs prev"></span>
+								<div id="slider" class="slider">
+									<a href="#" class="trs"><img src="./img/imagem01.jpg" alt="Vale do Anhangabaú [imagem 01]"></a>
+									<a href="#" class="trs"><img src="./img/imagem02.jpg" alt="Vale do Anhangabaú [imagem 02]"></a>
+									<a href="#" class="trs"><img src="./img/imagem03.jpg" alt="Vale do Anhangabaú [imagem 03]"></a>
+								</div>
+								<div id="div-legenda" class="legenda-container">
+									<figcaption id="legenda1" class="legenda-slider"></figcaption>
+								</div>
+							</figure>
+						</div>
+					</div>
+					<hr>
+					<div class="colunas-container">
+						<div class="linha-inteira">
+							<h3 class="" id="titulodesecao2">Texto dividido em duas colunas</h3>
+						</div>
+						<div id="bloco01" class="coluna-50 corpodetexto margem-interna" style="background-color: #0F0;">
+							<h6>LOREM IPSUM</h6>
+							<p class="times-new-roman">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
+								eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+								tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
+								magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
+						</div>
+						<div id="bloco02" class="coluna-50 corpodetexto margem-interna" style="background-color: #FF69B4;">
+							<h6>Tradução</h6>
+							<p class="times-new-roman">Aquele que ama ou exerce ou deseja a dor, pode ocasionalmente adquirir algum
+								prazer na labuta. Para dar um exemplo trivial, qual de nós se submete a laborioso exercício
+								físico, exceto para obter alguma vantagem com isso? Desmoralizado pelos encantos do prazer,
+								percebe que a dor não resulta em prazer algum. Está tão cego pelo desejo que não pode prever
+								quem não cumprirá seu dever por fraqueza de vontade. </p>
+						</div>
+					</div>
+					<hr>
+					<div id="div-mapa">
+						<h3 class="" id="titulodesecao2">Mapa e endereço</h3>
+						<div id="mapa1" class="google-map-api container-fit">
+							<figure id="figure02" class="figure box-fit">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14611.877058150405!2d-46.70904998011239!3d-23.71279159949398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fb039ebd917%3A0xa7306b8f05e03288!2sR.%20Mataripe%2C%20592%20-%20Cidade%20Dutra%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004807-040!5e0!3m2!1spt-BR!2sbr!4v1628997467285!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							</figure>
+						</div>
+					</div>
+	<!--
+					<hr>
+					<div id="divaudio" class="central">
+						<audio autoplay="autoplay" loop="loop" preload="auto">
+							<source src=".\audio\Bach-ToccataAndFugue-BWV565.ogg" type="audio/ogg" />
+							<p>Seu navegador não suporta recursos multimídia HTML5.</p>
+						</audio>
+						<br>
+					</div>
+	-->
+				</section>
+			</main>
+			<br>
 			<hr>
-			<section id="secaoprincipal">
-				<div class="div-galeria">
-					<div class="">
-						<h3 class="" id="titulodesecao1">Galeria de imagens com rolagem lateral</h3>
-					</div>
-					<div class="div-figura">
-						<h5>Vale do Anhangabaú</h5>
-						<figure id="figure-01" class="figure">
-							<span class="seta trs next"></span>
-							<span class="seta trs prev"></span>
-							<div id="slider" class="slider">
-								<a href="#" class="trs"><img src="./img/imagem01.jpg" alt="Vale do Anhangabaú [imagem 01]"></a>
-								<a href="#" class="trs"><img src="./img/imagem02.jpg" alt="Vale do Anhangabaú [imagem 02]"></a>
-								<a href="#" class="trs"><img src="./img/imagem03.jpg" alt="Vale do Anhangabaú [imagem 03]"></a>
-							</div>
-							<div id="div-legenda" class="legenda-container">
-								<figcaption id="legenda1" class="legenda-slider"></figcaption>
-							</div>
-						</figure>
-					</div>
+			<section id="menuinferior-container" class="container-fit">
+				<div id="menuinferior-box" class="box-fit menu-links" style="">
+					<h6>Menu principal</h6>
+					<nav id="navmenuprincipal" class="links">
+						<a href="javascript:void(0)" id="mudaEstilo">Alterar estilo</a><br>
+						<a href="javascript:void(0)" id="paraMusica" onclick="MIDIjs.stop();">Parar música</a><br>
+						<a href="#topo">Ir ao topo da página</a><br>
+						<a href="./home.html">Voltar para a Página Inicial</a><br>
+					</nav>
 				</div>
-				<hr>
-				<div class="colunas-container">
-					<div class="linha-inteira">
-						<h3 class="" id="titulodesecao2">Texto dividido em duas colunas</h3>
-					</div>
-					<div id="bloco01" class="coluna-50 corpodetexto margem-interna" style="background-color: #0F0;">
-						<h6>LOREM IPSUM</h6>
-						<p class="times-new-roman">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
-							eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
-							tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
-							magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
-					</div>
-					<div id="bloco02" class="coluna-50 corpodetexto margem-interna" style="background-color: #FF69B4;">
-						<h6>Tradução</h6>
-						<p class="times-new-roman">Aquele que ama ou exerce ou deseja a dor, pode ocasionalmente adquirir algum
-							prazer na labuta. Para dar um exemplo trivial, qual de nós se submete a laborioso exercício
-							físico, exceto para obter alguma vantagem com isso? Desmoralizado pelos encantos do prazer,
-							percebe que a dor não resulta em prazer algum. Está tão cego pelo desejo que não pode prever
-							quem não cumprirá seu dever por fraqueza de vontade. </p>
-					</div>
-				</div>
-				<hr>
-				<div id="div-mapa">
-					<h3 class="" id="titulodesecao2">Mapa e endereço</h3>
-					<div id="mapa1" class="google-map-api container-fit">
-						<figure id="figure02" class="figure box-fit">
-							<iframe	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2953.7546217839536!2d-46.7011469896463!3d-23.71338753486501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fb039ebd917%3A0xa7306b8f05e03288!2sR.%20Mataripe%2C%20592%20-%20Cidade%20Dutra%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004807-040!5e1!3m2!1spt-BR!2sbr!4v1628485769227!5m2!1spt-BR!2sbr"	width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-							</iframe>
-						</figure>
-					</div>
-				</div>
-<!--
-				<hr>
-				<div id="divaudio" class="central">
-					<audio autoplay="autoplay" loop="loop" preload="auto">
-						<source src=".\audio\Bach-ToccataAndFugue-BWV565.ogg" type="audio/ogg" />
-						<p>Seu navegador não suporta recursos multimídia HTML5.</p>
-					</audio>
-					<br>
-				</div>
--->
 			</section>
-		</main>
-		<br>
-		<hr>
-		<section id="menuinferior-container" class="container-fit">
-			<div id="menuinferior-box" class="box-fit menu-links" style="background-color: #FF0;">
-				<h6>Menu principal</h6>
-				<nav id="navmenuprincipal links">
-					<a href="javascript:void(0)" id="mudaEstilo">Alterar estilo</a><br>
-					<a href="javascript:void(0)" id="paraMusica" onclick="MIDIjs.stop();">Parar música</a><br>
-					<a href="#topo">Ir ao topo da página</a><br>
-					<a href="./home.html">Voltar para a Página Inicial</a><br>
-				</nav>
-			</div>
-		</section>
-		<footer id="rodape" class="rodape">
-			<div id="divrodape" class="divrodape">
-				<p><small>Desenvolvido por <b>Fábio de Almeida Martins</b><br>© 2021 - Fábio de Almeida Martins</small>
-				</p>
-			</div>
-		</footer>
-	</div>
-</body>
+			<footer id="rodape" class="rodape">
+				<div id="divrodape" class="divrodape">
+					<p><small>Desenvolvido por <b>Fábio de Almeida Martins</b><br>© 2021 - Fábio de Almeida Martins</small>
+					</p>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>

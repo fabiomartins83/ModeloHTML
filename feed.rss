@@ -1,0 +1,22 @@
+<?xml version=”1.0"?>
+<rss version=”2.0">
+<channel>
+
+<title>Titulo do seu site</title>
+<link>http://www.endereçodoseusite.com.etc</link>
+<description>Descrição do seu site</description>
+
+<item>
+<title>Notícia mais recente</title>
+<link>http://seusite.com.etc/noticias/maisnova</link>
+<description>Texto secundário.</description>
+</item>
+
+<item>
+<title>Noticia mais antiga</title>
+<link>http://seusite.com.etc/noticias/maisvelha</link>
+<description>Texto secundário.</description>
+</item>
+
+</channel>
+</rss>
