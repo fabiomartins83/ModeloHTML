@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- 
+	*** Modelo de arquivo HTML para desenvolvimento de página da web
+	*** Desenvolvido por Fábio de Almeida Martins
+-->
+<html lang="pt-br" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="600">
+		<meta http-equiv="content-language" content="pt-br">  <!-- tag SEO para definir idioma ao buscador Bing -->
+		<meta name="author" content="Fabio de Almeida Martins">
+		<meta name="copyright" content="Direitos Reservados - Fabio de Almeida Martins - © 2021 ">
+		<meta name="reply-to" content="fabio.martins.01@hotmail.com">
+		<meta name="description" content="descricao"> <!-- tag SEO descrição do site -->
+		<meta name="keywords" content="palavras-chaves, palavra-chave"> <!-- tag SEO keywords -->
+		<meta name="rating" content="general"> <!-- tag SEO rating -->
+		<meta name="robots" content="noindex,nofollow"> <!-- tag SEO para search bots -->
+		<meta name="googlebots" content="noindex,nofollow"> <!-- tag SEO para Googlebot -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- tag para responsividad, ajusta o viewport para preencher toda a largura do dispositivo em escala inicial 1.0 -->
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> <!-- tag para incluir ícone do site -->
+		<link rel="alternative" title="" href="./feed.rss" type="application/rss+xml"> <!-- tag para feed RSS -->
+		<link rel="start" href="./home.html">
+<!--
+		<link rel="index" title="Liber Psalmorum - Home" href="./home.html">
+		Para habilitar o Bootstrap, insira as duas linhas abaixo:
+-->
+		<title>Título da página na janela</title>
+		<script type="text/javascript" charset="utf-8" src="./js/JQuery3-min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="http://www.midijs.net/lib/midi.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./js/scripts.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./js/api-fetch-leitura-xml.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" charset="utf-8" href="./css/style-light.css">
+		<link type="text/css" rel="stylesheet" charset="utf-8" id="css-light" href="" data-href="./css/style-dark.css">
+	</head>
+	
+	<body id="body">
+<!-- 
+	<body id="body" onload="MIDIjs.play('./audio/Bach-PreludeInCMajor-BWV846.mid');">
+-->
+		<script async type="text/javascript" src="./js/scripts-body.js"></script>
+		<div id="div-conteudo">
+			<header id="header" class="cabecalho">
+				<div id="barra-superior" class="barra-superior fixa"> 
+					<!-- 
+					<div id="menu-superior" class="menu-superior">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li>
+								<a href="#">História</a>
+								<ul>
+									<li><a href="#">Origem</a></li>
+									<li><a href="#">Expansão</a></li>
+									<li><a href="#">Reconhecimento</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Produtos</a>
+								<ul>
+									<li><a href="#">Para a casa</a></li>
+									<li><a href="#">Para o escritório</a></li>
+									<li><a href="#">Para indústrias</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Quem somos</a>
+								<ul>
+									<li><a href="#">Fundadores</a></li>
+									<li><a href="#">Nossa equipe</a></li>
+								</ul>
+							</li>
+							<li><a href="contato.html">Contato </a></li>
+						</ul>
+					</div>
+					-->
+				</div> 
+			</header>
+			<main id="principal">
+				<div class="coluna-unica">
+					<h1 id="tituloprincipal" class="titulo">Modelo HTML</h1>
+					<h2>Página em branco</h2>
+					<p class="corpodetexto serif identado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>					
+				</div>
+			</main>
+			<br>
+			<section id="menu-inferior-container" class="container-fit float-container direita">
+				<div id="menu-inferior-box" class="menu-links" style="">
+					<h6>Menu principal</h6>
+					<nav id="navmenuprincipal" class="links">
+						<a href="javascript:void(0)" id="mudaEstilo">Alterar estilo</a><br>
+						<a href="#topo">Ir ao topo da página</a><br>
+						<a href="./home.html">Voltar para a Página Inicial</a>
+					</nav>
+				</div>
+			</section>
+			<footer id="footer" class="footer">
+				<div id="barra-inferior" class="barra-inferior fixa">
+					<p id="rodape" class="rodape"><small>Desenvolvido por <b>Fábio de Almeida Martins</b><br>© 2021 - Fábio de Almeida Martins</small></p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

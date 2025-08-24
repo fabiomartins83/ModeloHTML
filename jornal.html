@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="descricao">
+		<meta name="author" content="Fabio de Almeida Martins">
+		<meta name="copyright" content="Direitos Reservados - Fabio de Almeida Martins - © 2021 ">
+		<meta name="reply-to" content="fabio.martins.01@hotmail.com">
+		<meta name="keywords" content="palavras-chaves, palavra-chave">
+		<meta name="rating" content="general">
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="googlebots" content="noindex,nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="image/x-icon" rel="shortcut icon" href="./img/favicon.ico">
+		<link type="application/rss+xml" rel="alternative" title="" href="./feed.rss">
+		<link rel="start" href="./home.html">
+		<title>Modelo de Website 01</title>
+		<script type="text/javascript" src="./js/JQuery3-min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="./js/scripts.js"></script>
+		<link type="text/css" rel="stylesheet" charset="utf-8" href="./css/style-light.css">
+		<link type="text/css" rel="stylesheet" charset="utf-8" id="css-light" href="" data-href="./css/style-dark.css">
+		<!-- 
+		<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+		<base href="https://fabiomartins83.github.io/ModeloHTML/" target="_blank">
+		-->
+	</head>
+	<body id="body">
+		<script async type="text/javascript" src="./js/scripts-body.js"></script>
+		<!-- código CSS para alinhar as colunas e as barras da página -->
+		<style type="text/css"> 
+			*, html, main {
+				margin: 0;
+				padding: 0;
+				z-index: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				height: 100%;
+				padding: 0;				
+				z-index: 0;
+				line-height: 1
+				font-weight: normal;
+				text-indent: 0em;
+			}
+
+			main {
+				margin: 0px /* 0px 20px*/;
+			}
+
+			a {
+				color: #00F; 
+				font-weight: normal; 
+				text-decoration: none; 
+				outline: 0 none;
+			}
+
+			a:hover, a:focus {
+				text-decoration: underline;
+				font-weight: bold;
+			}
+
+			a:link {
+				cursor: pointer;
+			}
+
+			h1,h2,h3,h4,h5 {
+				text-align: center;
+				font-weight: bold;
+			}
+
+			h1 {
+				margin: 20px auto;
+				font-size: 4em; /* 3.2 */
+				clear: both;
+			}
+
+			h2 {
+				margin: 16px auto;
+				font-size: 3em; /* 2.3 */
+			}
+
+			h3 {
+				margin: 14px auto;
+				font-size: 2em; /* 1.9 */
+			}
+
+			h4 {
+				margin: 12px auto;
+				font-size: 1.5em; /* 1.6 */
+			}
+
+			h5 {
+				margin: 10px auto;
+				font-size: 1.2em; /* 1.3 */
+			}
+
+			h6 {
+				text-align: justify;
+				font-weight: bold;
+				margin: 8px auto;
+				font-size: 1.0em;
+			}
+
+			.logo {
+				font-size: 4.5em;
+				clear: both;
+			}
+
+			.div-conteudo {
+				margin: 0;
+				padding: 0;
+				line-height: 1;
+			}
+
+			.container-main {
+				width: 100%;
+				font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+				line-height: 1
+				float: left;
+			}
+
+			.barra-lateral-direita {    
+				/*border: solid 1px #000; */
+				height: 450px;
+				right: 0px;
+				width: 15%;
+				margin: 0;
+				padding: 0 5px;
+				position: absolute;
+				float: right;
+			}
+
+			.div-principal {
+				/*border: solid 1px #000; */
+				height: 450px;
+				left: 0px;
+				width: 78%;
+				height: fit-content;
+				padding: 0;
+				margin: 0; /*margin: 0px 5px; */
+				align-items: center;
+				text-align: left;
+			}
+
+			.bloco-superior {
+			}
+
+			.secao-horizontal { /*
+				border: solid 1px #DDD;  */
+				width: 100%;
+				height: fit-content;
+				position: relative;
+				display: inline-block; /*inline-flex;*/
+				float: left;
+			}
+
+			.coluna {
+				background: #EEE;
+				width: 370px;
+				height: fit-content;
+   	         	display: inline-block;
+				margin: 10px;
+   	         	padding: 10px;
+   	         	float: left;
+			}
+
+			.col1 {
+				left: 0px;
+			}
+
+			.col2 {
+				left: 400px;
+			}
+
+			.col3 {
+				left: 800px	;
+			}
+
+			.coluna-unica {
+				/*border: solid 1px #000; */
+				width: 78%;
+				height: fit-content;
+				position: relative;
+   	         	display: inline-block;
+   	         	padding: 10px;
+   	         	float: left;
+   	         	clear: right;
+			}
+
+			.borda-redonda {
+				border: solid 1px #000;
+				border-radius: 15px; 
+			}
+
+			.relevo {
+				border: solid 1px #EEE; 
+				box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+			}
+
+			.container-header {
+				width: 100%;
+				height: fit-content;
+				max-height: 75px;
+				position: relative;
+				z-index: 9;
+				padding: 10px 0px;
+			}
+
+			.container-inferior {
+				height: 50px;
+				width: fit-content;
+				bottom: 0px;
+				min-width: 100%;
+				z-index: 10;
+				position: relative; /* fixed */
+				margin: 0px;
+				background-color: #FFF;
+			}
+
+			.corpodetexto {
+				line-height: 1.5;
+				font-size: 1.1em;
+				text-align: justify;
+				font-weight: normal;
+			}
+
+			.central {
+				text-align: center;
+			}
+
+			.serif{
+				font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
+			}
+
+			.sans-serif, .links {
+				font-family: Arial, Helvetica, sans-serif; font-weight: normal;
+			}
+
+			.identado{
+				text-indent: 2em;
+			}
+
+			.direita {
+				float: right;
+			}
+
+			.links {
+				font-size: 0.9em;
+			}
+
+			.rodape {
+				font-size: 0.9em;
+				color: #000;
+				line-height: 1;
+			}
+			
+			/* Implementação de fonte gráfica externa */
+			@font-face {
+			    font-family: 'Old English Gothic';
+			    src: url('./fonts/OldEnglishGothic.eot?#iefix') format('embedded-opentype'),
+			        url('./fonts/OldEnglishGothic.woff2') format('woff2'),
+			        url('./fonts/OldEnglishGothic.woff') format('woff'),
+			        url('./fonts/OldEnglishGothic.svg#OldEnglishGothic') format('svg');
+			    font-weight: 100;
+			    font-style: normal;
+			}
+
+			.letra-gotica {
+				font-family: 'Old English Gothic', Garamond, Georgia, 'Times New Roman', Times, serif; 
+			}
+			#tituloprincipal {
+				font-size: 4.5em;
+			}
+		</style>
+		<div id="div-conteudo letra-normal">
+			<div id="div-header" class="div-header">
+				<header id="header" class="container-header barra-superior fixa" style="background-color: darkblue;"> <!-- conteúdo da barra superior -->
+					<!--
+					-->
+					<div id="menu-superior" class="menu-superior">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li>
+								<a href="#">História</a>
+								<ul>
+									<li><a href="#">Origem</a></li>
+									<li><a href="#">Expansão</a></li>
+									<li><a href="#">Reconhecimento</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Produtos</a>
+								<ul>
+									<li><a href="#">Para a casa</a></li>
+									<li><a href="#">Para o escritório</a></li>
+									<li><a href="#">Para indústrias</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Quem somos</a>
+								<ul>
+									<li><a href="#">Fundadores</a></li>
+									<li><a href="#">Nossa equipe</a></li>
+								</ul>
+							</li>
+							<li><a href="contato.html">Contato </a></li>
+						</ul>
+					</div>
+				</header>
+			</div>
+			<div id="div-main">
+				<main id="main" class="container-main serif">
+					<div id="bloco-superior" class="bloco-superior">
+						<h1 id="tituloprincipal" class="titulo letra-gotica logo">Gazeta de São Paulo</h1>
+						<h3 id="subtitulo" class="titulo">O jornal do povo</h3>
+					</div>
+					<hr>
+				    <div id="div-principal" class="div-principal">
+						<a id="topo"></a>
+						<div id="coluna-unica" class="coluna-unica">
+							<h5 id="titulo2" class="titulo esquerda">Confira as notícias de hoje: </h5>
+						</div>
+						<div id="div-secao-horizontal-01" class="secao-horizontal">
+					    	<div id="col1" class="coluna col1 borda-redonda relevo serif"> <!-- conteúdo da coluna 1 -->
+					    		<h5 class="">LOREM IPSUM</h5>
+					    		<br>
+								<p class="corpodetexto identado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
+										eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+										tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
+										magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
+								<br>
+								<a href="#" class="links direita">Leia mais...</a>
+					    	</div>
+					    	<div id="col2" class="coluna col2 borda-redonda relevo serif"> <!-- conteúdo da coluna 2 -->
+					    		<h5 class="">LOREM IPSUM</h5>
+					    		<br>
+								<p class="corpodetexto identado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
+										eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+										tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
+										magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
+								<br>
+								<a href="#" class="links direita">Leia mais...</a>
+					    	</div>
+					    	<div id="col3" class="coluna col3 borda-redonda relevo serif"> <!-- conteúdo da coluna 3 -->
+					    		<h5 class="">LOREM IPSUM</h5>
+					    		<br>
+								<p class="corpodetexto identado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
+										eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+										tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
+										magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
+								<br>
+								<a href="#" class="links direita">Leia mais...</a>
+					    	</div>
+					    	<div id="col4" class="coluna col1 borda-redonda relevo serif"> <!-- conteúdo da coluna 3 -->
+					    		<h5 class="">LOREM IPSUM</h5>
+					    		<br>
+								<p class="corpodetexto identado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
+										eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+										tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
+										magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
+								<br>
+								<a href="#" class="links direita">Leia mais...</a>
+					    	</div>
+					    	<div id="col5" class="coluna col2 borda-redonda relevo serif"> <!-- conteúdo da coluna 2 -->
+					    		<h5 class="">LOREM IPSUM</h5>
+					    		<br>
+								<p class="corpodetexto identado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula
+										eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+										tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus
+										magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing. </p>
+								<br>
+								<a href="#" class="links direita">Leia mais...</a>
+					    	</div>
+						</div>
+				    </div>
+				    <div id="barra-lateral-direita" class="barra-lateral-direita">
+					    <aside id="aside" class="aside sans-serif">
+							<h5>Menu lateral</h5>
+							<nav id="navmenuprincipal" class="links central">
+								<a href="javascript:void(0)" id="mudaEstilo">Alterar estilo</a><br>
+								<a href="javascript:void(0)" id="paraMusica" onclick="MIDIjs.stop();">Parar música</a><br>
+								<a href="#topo">Ir ao topo da página</a><br>
+								<a href="./frame.html">Voltar para a Página Inicial</a><br>
+							</nav>					    	
+					    </aside>
+				    </div>
+				    <!--
+					-->
+				</main>
+			</div>
+			<div id="div-footer" class="div-footer">
+				<footer id="footer" class="container-inferior"> <!-- conteúdo da barra inferior -->
+					<p id="rodape" class="rodape central"><small>Desenvolvido por <b>Fábio de Almeida Martins</b><br>© 2024 - Fábio de Almeida Martins - Direitos reservados</small></p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

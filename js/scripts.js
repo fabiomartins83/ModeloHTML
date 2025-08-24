@@ -100,7 +100,7 @@ function setaImagem() {
 	settings.legenda(elemento);
 
 	//chama o slide à um determinado tempo
-	var intervalo = setInterval(settings.slide, 3000);
+	var intervalo = setInterval(settings.slide, 4000);
 	var setanext = document.querySelector(".next");
 	var setaprev = document.querySelector(".prev");
 	if ((typeof (setanext) != undefined) && (setanext != null)) {
